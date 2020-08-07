@@ -1,0 +1,5 @@
+Chapter,Description
+Ch \@ref(QualityIndicatorsFramework),Provides the framework and entire overview.
+Ch \@ref(faoswsQualityIndicators),Provides the whole documentation of the module faoswsQualityIndicators.
+Ch \@ref(qualityIndicatorsApp),Provides the whole documentation of the Shiny App of the Quality Indicators.
+Appendix,"Describe all code lists, reference tables (datatables) and data sets."

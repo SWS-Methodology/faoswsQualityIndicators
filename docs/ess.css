@@ -15,11 +15,11 @@ p {
   margin: 0EM;
   padding-left: 20px;
   padding-bottom: 0em;
-  color: #3a6b46;
+  color: #FFFFFF;
   border-radius: 25px 25px 0px 0px;
   border-bottom: 0px;
-  background: #cccccc;
-  font-size: 36pt;
+  background: #5191c8;
+  font-size: 32pt;
   line-height: 65px;
   font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -31,8 +31,8 @@ p {
   margin: 0;
   padding-left: 20px;
   padding-bottom: 0em;
-  color: #cccccc;
-  background: #3a6b46;
+  color: #FFFFFF;
+  background: #5191c8;
   font-size: 18pt;
   font-style: normal;
   font-weight: normal;
@@ -46,8 +46,8 @@ p {
   font-style: normal;
   border-radius: 0px 0px 25px 25px;
   padding-left: 20px;
-  color: #cccccc;
-  background: #3a6b46;
+  color: #FFFFFF;
+  background: #5191c8;
   font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -60,7 +60,7 @@ p {
 
 .book-body p.caption {
   color: #333333;
-  background-color: #eeeeee;
+  background-color: #F2F3F4;
   padding-left: 20px;
   font-size: 12pt;
   font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -71,20 +71,20 @@ p {
 }
 
 h1, h2 {
-  border-bottom: 2px solid #3a6b46;
+  border-bottom: 2px solid #5191c8;
 }
 
 h1, h2, h3, h4 {
-  color: #3a6b46;
+  color: #5191c8;
   font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 a {
-color: #3a6b46;
+color: #5191c8;
 }
 
 dt {
-  color: #3a6b46;
+  color: #5191c8;
 }
 
 dd {
@@ -94,7 +94,7 @@ dd {
 }
 
 .book-body table {
-  background: #eeeeee;
+  background: #FFFFFF;
   border: 0px;
 }
 
@@ -134,7 +134,7 @@ dd {
 }
 
 .book .book-body .page-wrapper .page-inner section.normal pre {
-    background: #eeeeee;
+    background: #FFFFFF;
     padding: 5px 10px 5px 10px;
     margin: 0px 0px 5px 0px;
 }
@@ -144,7 +144,7 @@ ol {
 }
 
 .book .book-summary {
-  background-color: #3a6b46;
+  background-color: #5191c8;
 }
 
 .book .book-summary ul.summary li a {
@@ -156,9 +156,10 @@ ol {
   color: #edb621;
 }
 
+/* color of the background of the selected topic or chapter */
 .book .book-summary ul.summary li a:hover {
-  background-color: #aaaaaa;
-  color: #3a6b46;
+  background-color: #FFFFFF;
+  color: #5191c8;
 }
 
 .book .book-summary .book-search {

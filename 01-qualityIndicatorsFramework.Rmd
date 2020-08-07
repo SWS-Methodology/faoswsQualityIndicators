@@ -1,0 +1,25 @@
+# **Quality Indicators Framework** {#QualityIndicatorsFramework}
+
+The Quality Indicators (QI) module is meant to take place right after a statsitical process has been validated. This means that a technical unit has already finalized its entire data processing (**questionnaire dispatch $\Rightarrow$ data collection $\Rightarrow$ data entry $\Rightarrow$ data cleaning $\Rightarrow$ imputation $\Rightarrow$ validation**) and it is ready to release the data. Thus, the _officer in charge_ can analyse the quality of the data before disseminating and may return to any step of the process if he/she deems necessary.
+
+The workflow of the QI module is shown below. As mentioned above, it starts when the data is ready to be released. In the SWS context, this means that the technical unit can _tag_ its data set and materialize it in the SWS domain **Disseminated Datasets**. Therefore, the **faoswsQualityIndicators** module can compile the indicators and save them in a dedicated dataset in the domain **Quality Indicators**. In this way, the _officer in charge_ can find the results either in the SWS or in the _Shiny App_.
+
+It is important to highlight that each technical unit is responsible for its own data in the domain **Disseminated Datasets**, which means that the technical unit is the only one who is able to populate/modify its own data.
+
+```{r fig.align='center', echo=FALSE, fig.cap='Workflow of the Quality Indicators module in the SWS'}
+knitr::include_graphics('images/overall_workflow_QI.png', dpi = NA)
+```
+
+
+
+## **Build up historical data disseminated in the SWS**
+
+It is known that the SWS was built to be a working system and not a dissemination platform. This means that unless a technical unit creates a dedicated dataset to store only the dissemination data, this data will be found only in the dissemination platform. Thus, there might be differences between the data found in the two systems.
+
+Despite this issue, it is still worth to compute the QI for the historical data. In order to do so, there is a need to retrieve the data from the dissemination platforms (e.g. FAOSTAT) and bring it back to the SWS.   
+
+## **Data Processing**
+
+## **Aggregates**
+
+## **Results**
