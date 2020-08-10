@@ -37,16 +37,17 @@ Converting areas, items and elements from one system to another one is usually s
 
 ### **Livestock Primary**
 
-*Livestock Primary* is disseminated in **FAOSTAT** under **Production**.
+*Livestock Primary* is disseminated in **FAOSTAT** under **Production**. In order to calculate their QI, there was a need to build up the historical data disseminated as described in [**Build up historical data disseminated in the SWS**]. Its correspondent data set in the SWS is in the domain `agriculture`, data set `aproduction`. 
 
 ### **Trade Crops Livestock products**
 
-*Trade Crops Livestock products* are disseminated in **FAOSTAT** under **Trade**.
+*Trade Crops Livestock products* are disseminated in **FAOSTAT** under **Trade**. In order to calculate their QI, there was a need to build up the historical data disseminated as described in [**Build up historical data disseminated in the SWS**]. Its correspondent data set in the SWS is in the domain `trade`, data set `total_trade_cpc_m49`. 
 
 
 ### **Trade Live Animals**
 
-*Trade Live Animals* are disseminated in **FAOSTAT** under **Trade**.
+*Trade Live Animals* are disseminated in **FAOSTAT** under **Trade**. In order to calculate their QI, there was a need to build up the historical data disseminated as described in [**Build up historical data disseminated in the SWS**]. Its correspondent data set in the SWS is in the domain `trade`, data set `total_trade_cpc_m49`. 
+
 
 ### **Fertilizers by Nutrient**
 
@@ -62,4 +63,3 @@ Converting areas, items and elements from one system to another one is usually s
 
 ## **Aggregates**
 
-## **Results**
