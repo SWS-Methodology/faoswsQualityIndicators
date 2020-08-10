@@ -14,9 +14,49 @@ knitr::include_graphics('images/overall_workflow_QI.png', dpi = NA)
 
 ## **Build up historical data disseminated in the SWS**
 
-It is known that the SWS was built to be a working system and not a dissemination platform. This means that unless a technical unit creates a dedicated dataset to store only the dissemination data, this data will be found only in the dissemination platform. Thus, there might be differences between the data found in the two systems.
+It is known that the SWS was built to be a working system and not a dissemination platform. This means that unless a technical unit creates a dedicated data set to store only the dissemination data, this data will be found only in the dissemination platform because as time passes, the data may be revised or another imputation method tested and not necessarily be disseminated for various reasons. Thus, there might be differences between the data found in the two systems.
 
-Despite this issue, it is still worth to compute the QI for the historical data. In order to do so, there is a need to retrieve the data from the dissemination platforms (e.g. FAOSTAT) and bring it back to the SWS.   
+Despite this issue, it is still worth to compute the QI for the historical data disseminated. In order to do so, the CSI-SWS team had to retrieve the data from the dissemination platforms (e.g. FAOSTAT) and bring it back to the SWS for the technical units that did not create the _data dissemination_. This exercise is illustrated in the below figure.
+
+```{r fig.align='center', echo=FALSE, fig.cap='Workflow to retrieve historical data disseminated'}
+knitr::include_graphics('images/legacy_data_workflow_QI.png', dpi = NA)
+```
+
+For each disseminated data to be migrated to SWS there is a need to convert:
+
+- areas to `geographicAreaM49`;
+- items to `measuredItemCPC` (or another code list that contains those items);
+- elements to `measuredElement` (or another code list that contains those elements);
+- flags to SWS flag system (`flagObservationStatus` and `flagMethod`).
+
+Converting areas, items and elements from one system to another one is usually straightforward. However, the flag conversion is possible only from SWS to FAOSTAT. The other way round is not feasible as there is no one-to-one correspondence. Therefore the only way to retrieve the flags is, given a combination country-element-item-year-value disseminated, convert areas, items and elements to the SWS format and searches for it in the SWS - including in the historical data. The two data points should match exactly in terms of values for that year. Thus one can find the SWS flag system. If the values in both systems do not match, the algorithm takes the most recent figure with its flags.
+
+### **Crops**
+
+*Crops* are disseminated in **FAOSTAT** under **Production**. In order to calculate their QI, there was a need to build up the historical data disseminated as described in [**Build up historical data disseminated in the SWS**]. Its correspondent data set in the SWS is in the domain `agriculture`, data set `aproduction`. 
+
+### **Livestock Primary**
+
+*Livestock Primary* is disseminated in **FAOSTAT** under **Production**.
+
+### **Trade Crops Livestock products**
+
+*Trade Crops Livestock products* are disseminated in **FAOSTAT** under **Trade**.
+
+
+### **Trade Live Animals**
+
+*Trade Live Animals* are disseminated in **FAOSTAT** under **Trade**.
+
+### **Fertilizers by Nutrient**
+
+*Fertilizers by Nutrient* are disseminated in **FAOSTAT** under **Fertilizers**.
+
+
+### **Fertilizers by Product**
+
+*Fertilizers by Product* are disseminated in **FAOSTAT** under **Fertilizers**.
+
 
 ## **Data Processing**
 

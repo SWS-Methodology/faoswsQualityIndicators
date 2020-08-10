@@ -8,6 +8,7 @@ output: bookdown::gitbook
 css: ess.css
 documentclass: book
 link-citations: yes
+cover-image: images/quality_indicators_cover_book.png
 description: "The online book describes steps towards the implementation of the Quality Indicators of the various FAO processes into the Corporate Statistical Working System (SWS)"
 ---
 
@@ -30,9 +31,9 @@ Use the **Chrome browser** to have a correct visualization of HTML outputs in th
 <br>
 <br>
 
-<!--```{r fig.align='center', echo=FALSE}
-knitr::include_graphics('images/forestry_cover_book.png', dpi = NA)
-```-->
+```{r fig.align='center', echo=FALSE}
+knitr::include_graphics('images/quality_indicators_cover_book.png', dpi = NA)
+```
 
 <br>
 <br>
