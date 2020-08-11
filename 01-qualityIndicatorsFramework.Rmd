@@ -33,30 +33,30 @@ Converting areas, items and elements from one system to another one is usually s
 
 ### **Crops**
 
-*Crops* are disseminated in **FAOSTAT** under **Production**. In order to calculate their QI, there was a need to build up the historical data disseminated as described in [**Build up historical data disseminated in the SWS**]. Its correspondent data set in the SWS is in the domain `agriculture`, data set `aproduction`. 
+[*Crops*](http://www.fao.org/faostat/en/#data/QC) are disseminated in **FAOSTAT** under **Production**. In order to calculate their QI, there was a need to build up the historical data disseminated as described in [**Build up historical data disseminated in the SWS**]. Its correspondent data set in the SWS is in the domain `agriculture`, data set `aproduction`. 
 
 ### **Livestock Primary**
 
-*Livestock Primary* is disseminated in **FAOSTAT** under **Production**. In order to calculate their QI, there was a need to build up the historical data disseminated as described in [**Build up historical data disseminated in the SWS**]. Its correspondent data set in the SWS is in the domain `agriculture`, data set `aproduction`. 
+[*Livestock Primary*](http://www.fao.org/faostat/en/#data/QL) is disseminated in **FAOSTAT** under **Production**. In order to calculate their QI, there was a need to build up the historical data disseminated as described in [**Build up historical data disseminated in the SWS**]. Its correspondent data set in the SWS is in the domain `agriculture`, data set `aproduction`. 
 
-### **Trade Crops Livestock products**
+### **Crops and livestock products**
 
-*Trade Crops Livestock products* are disseminated in **FAOSTAT** under **Trade**. In order to calculate their QI, there was a need to build up the historical data disseminated as described in [**Build up historical data disseminated in the SWS**]. Its correspondent data set in the SWS is in the domain `trade`, data set `total_trade_cpc_m49`. 
+[*Crops and livestock products*](http://www.fao.org/faostat/en/#data/TP) are disseminated in **FAOSTAT** under **Trade**. In order to calculate their QI, there was a need to build up the historical data disseminated as described in [**Build up historical data disseminated in the SWS**]. Its correspondent data set in the SWS is in the domain `trade`, data set `total_trade_cpc_m49`. 
 
 
-### **Trade Live Animals**
+### **Live animals**
 
-*Trade Live Animals* are disseminated in **FAOSTAT** under **Trade**. In order to calculate their QI, there was a need to build up the historical data disseminated as described in [**Build up historical data disseminated in the SWS**]. Its correspondent data set in the SWS is in the domain `trade`, data set `total_trade_cpc_m49`. 
+[*Live animals*](http://www.fao.org/faostat/en/#data/TA) are disseminated in **FAOSTAT** under **Trade**. In order to calculate their QI, there was a need to build up the historical data disseminated as described in [**Build up historical data disseminated in the SWS**]. Its correspondent data set in the SWS is in the domain `trade`, data set `total_trade_cpc_m49`. 
 
 
 ### **Fertilizers by Nutrient**
 
-*Fertilizers by Nutrient* are disseminated in **FAOSTAT** under **Fertilizers**.
+[*Fertilizers by Nutrient*](http://www.fao.org/faostat/en/#data/RFN) are disseminated in **FAOSTAT** under **Inputs**.
 
 
 ### **Fertilizers by Product**
 
-*Fertilizers by Product* are disseminated in **FAOSTAT** under **Fertilizers**.
+[*Fertilizers by Product*](http://www.fao.org/faostat/en/#data/RFB) are disseminated in **FAOSTAT** under **Inputs**.
 
 
 ## **Data Processing**

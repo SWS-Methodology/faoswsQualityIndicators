@@ -30,7 +30,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="preface.html"/>
+<link rel="prev" href="index.html"/>
 <link rel="next" href="faoswsQualityIndicators.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -49,7 +49,6 @@
 
 
 
-<script src="libs/kePrint-0.0.1/kePrint.js"></script>
 
 
 
@@ -66,18 +65,17 @@
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="index.html#welcome"><strong>Welcome</strong></a></li>
-<li><a href="preface.html#preface"><strong>Preface</strong></a><ul>
-<li><a href="preface.html#how-to-use-this-book"><strong>How to use this book</strong></a></li>
-<li><a href="preface.html#why-to-use-the-sws"><strong>Why to use the SWS</strong></a></li>
-<li><a href="preface.html#migration-actors"><strong>Migration actors</strong></a></li>
+<li><a href="index.html#welcome"><strong>Welcome</strong></a><ul>
+<li><a href="index.html#how-to-use-this-book"><strong>How to use this book</strong></a></li>
+<li><a href="index.html#why-to-use-the-sws"><strong>Why to use the SWS</strong></a></li>
+<li><a href="index.html#migration-actors"><strong>Migration actors</strong></a></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="QualityIndicatorsFramework.html"><a href="QualityIndicatorsFramework.html"><i class="fa fa-check"></i><b>1</b> <strong>Quality Indicators Framework</strong></a><ul>
 <li class="chapter" data-level="1.1" data-path="QualityIndicatorsFramework.html"><a href="QualityIndicatorsFramework.html#build-up-historical-data-disseminated-in-the-sws"><i class="fa fa-check"></i><b>1.1</b> <strong>Build up historical data disseminated in the SWS</strong></a><ul>
 <li class="chapter" data-level="1.1.1" data-path="QualityIndicatorsFramework.html"><a href="QualityIndicatorsFramework.html#crops"><i class="fa fa-check"></i><b>1.1.1</b> <strong>Crops</strong></a></li>
 <li class="chapter" data-level="1.1.2" data-path="QualityIndicatorsFramework.html"><a href="QualityIndicatorsFramework.html#livestock-primary"><i class="fa fa-check"></i><b>1.1.2</b> <strong>Livestock Primary</strong></a></li>
-<li class="chapter" data-level="1.1.3" data-path="QualityIndicatorsFramework.html"><a href="QualityIndicatorsFramework.html#trade-crops-livestock-products"><i class="fa fa-check"></i><b>1.1.3</b> <strong>Trade Crops Livestock products</strong></a></li>
-<li class="chapter" data-level="1.1.4" data-path="QualityIndicatorsFramework.html"><a href="QualityIndicatorsFramework.html#trade-live-animals"><i class="fa fa-check"></i><b>1.1.4</b> <strong>Trade Live Animals</strong></a></li>
+<li class="chapter" data-level="1.1.3" data-path="QualityIndicatorsFramework.html"><a href="QualityIndicatorsFramework.html#crops-and-livestock-products"><i class="fa fa-check"></i><b>1.1.3</b> <strong>Crops and livestock products</strong></a></li>
+<li class="chapter" data-level="1.1.4" data-path="QualityIndicatorsFramework.html"><a href="QualityIndicatorsFramework.html#live-animals"><i class="fa fa-check"></i><b>1.1.4</b> <strong>Live animals</strong></a></li>
 <li class="chapter" data-level="1.1.5" data-path="QualityIndicatorsFramework.html"><a href="QualityIndicatorsFramework.html#fertilizers-by-nutrient"><i class="fa fa-check"></i><b>1.1.5</b> <strong>Fertilizers by Nutrient</strong></a></li>
 <li class="chapter" data-level="1.1.6" data-path="QualityIndicatorsFramework.html"><a href="QualityIndicatorsFramework.html#fertilizers-by-product"><i class="fa fa-check"></i><b>1.1.6</b> <strong>Fertilizers by Product</strong></a></li>
 </ul></li>
@@ -112,7 +110,7 @@
 <p>The Quality Indicators (QI) module is meant to take place right after a statsitical process has been validated. This means that a technical unit has already finalized its entire data processing (<strong>questionnaire dispatch <span class="math inline">\(\Rightarrow\)</span> data collection <span class="math inline">\(\Rightarrow\)</span> data entry <span class="math inline">\(\Rightarrow\)</span> data cleaning <span class="math inline">\(\Rightarrow\)</span> imputation <span class="math inline">\(\Rightarrow\)</span> validation</strong>) and it is ready to release the data. Thus, the <em>officer in charge</em> can analyse the quality of the data before disseminating and may return to any step of the process if he/she deems necessary.</p>
 <p>The workflow of the QI module is shown below. As mentioned above, it starts when the data is ready to be released. In the SWS context, this means that the technical unit can <em>tag</em> its data set and materialize it in the SWS domain <strong>Disseminated Datasets</strong>. Therefore, the <strong>faoswsQualityIndicators</strong> module can compile the indicators and save them in a dedicated dataset in the domain <strong>Quality Indicators</strong>. In this way, the <em>officer in charge</em> can find the results either in the SWS or in the <em>Shiny App</em>.</p>
 <p>It is important to highlight that each technical unit is responsible for its own data in the domain <strong>Disseminated Datasets</strong>, which means that the technical unit is the only one who is able to populate/modify its own data.</p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-3"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-1"></span>
 <img src="images/overall_workflow_QI.png" alt="Workflow of the Quality Indicators module in the SWS"  />
 <p class="caption">
 Figure 1.1: Workflow of the Quality Indicators module in the SWS
@@ -122,7 +120,7 @@ Figure 1.1: Workflow of the Quality Indicators module in the SWS
 <h2><span class="header-section-number">1.1</span> <strong>Build up historical data disseminated in the SWS</strong></h2>
 <p>It is known that the SWS was built to be a working system and not a dissemination platform. This means that unless a technical unit creates a dedicated data set to store only the dissemination data, this data will be found only in the dissemination platform because as time passes, the data may be revised or another imputation method tested and not necessarily be disseminated for various reasons. Thus, there might be differences between the data found in the two systems.</p>
 <p>Despite this issue, it is still worth to compute the QI for the historical data disseminated. In order to do so, the CSI-SWS team had to retrieve the data from the dissemination platforms (e.g. FAOSTAT) and bring it back to the SWS for the technical units that did not create the <em>data dissemination</em>. This exercise is illustrated in the below figure.</p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-4"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-2"></span>
 <img src="images/legacy_data_workflow_QI.png" alt="Workflow to retrieve historical data disseminated"  />
 <p class="caption">
 Figure 1.2: Workflow to retrieve historical data disseminated
@@ -138,27 +136,27 @@ Figure 1.2: Workflow to retrieve historical data disseminated
 <p>Converting areas, items and elements from one system to another one is usually straightforward. However, the flag conversion is possible only from SWS to FAOSTAT. The other way round is not feasible as there is no one-to-one correspondence. Therefore the only way to retrieve the flags is, given a combination country-element-item-year-value disseminated, convert areas, items and elements to the SWS format and searches for it in the SWS - including in the historical data. The two data points should match exactly in terms of values for that year. Thus one can find the SWS flag system. If the values in both systems do not match, the algorithm takes the most recent figure with its flags.</p>
 <div id="crops" class="section level3">
 <h3><span class="header-section-number">1.1.1</span> <strong>Crops</strong></h3>
-<p><em>Crops</em> are disseminated in <strong>FAOSTAT</strong> under <strong>Production</strong>. In order to calculate their QI, there was a need to build up the historical data disseminated as described in <a href="QualityIndicatorsFramework.html#build-up-historical-data-disseminated-in-the-sws"><strong>Build up historical data disseminated in the SWS</strong></a>. Its correspondent data set in the SWS is in the domain <code>agriculture</code>, data set <code>aproduction</code>.</p>
+<p><a href="http://www.fao.org/faostat/en/#data/QC"><em>Crops</em></a> are disseminated in <strong>FAOSTAT</strong> under <strong>Production</strong>. In order to calculate their QI, there was a need to build up the historical data disseminated as described in <a href="QualityIndicatorsFramework.html#build-up-historical-data-disseminated-in-the-sws"><strong>Build up historical data disseminated in the SWS</strong></a>. Its correspondent data set in the SWS is in the domain <code>agriculture</code>, data set <code>aproduction</code>.</p>
 </div>
 <div id="livestock-primary" class="section level3">
 <h3><span class="header-section-number">1.1.2</span> <strong>Livestock Primary</strong></h3>
-<p><em>Livestock Primary</em> is disseminated in <strong>FAOSTAT</strong> under <strong>Production</strong>. In order to calculate their QI, there was a need to build up the historical data disseminated as described in <a href="QualityIndicatorsFramework.html#build-up-historical-data-disseminated-in-the-sws"><strong>Build up historical data disseminated in the SWS</strong></a>. Its correspondent data set in the SWS is in the domain <code>agriculture</code>, data set <code>aproduction</code>.</p>
+<p><a href="http://www.fao.org/faostat/en/#data/QL"><em>Livestock Primary</em></a> is disseminated in <strong>FAOSTAT</strong> under <strong>Production</strong>. In order to calculate their QI, there was a need to build up the historical data disseminated as described in <a href="QualityIndicatorsFramework.html#build-up-historical-data-disseminated-in-the-sws"><strong>Build up historical data disseminated in the SWS</strong></a>. Its correspondent data set in the SWS is in the domain <code>agriculture</code>, data set <code>aproduction</code>.</p>
 </div>
-<div id="trade-crops-livestock-products" class="section level3">
-<h3><span class="header-section-number">1.1.3</span> <strong>Trade Crops Livestock products</strong></h3>
-<p><em>Trade Crops Livestock products</em> are disseminated in <strong>FAOSTAT</strong> under <strong>Trade</strong>. In order to calculate their QI, there was a need to build up the historical data disseminated as described in <a href="QualityIndicatorsFramework.html#build-up-historical-data-disseminated-in-the-sws"><strong>Build up historical data disseminated in the SWS</strong></a>. Its correspondent data set in the SWS is in the domain <code>trade</code>, data set <code>total_trade_cpc_m49</code>.</p>
+<div id="crops-and-livestock-products" class="section level3">
+<h3><span class="header-section-number">1.1.3</span> <strong>Crops and livestock products</strong></h3>
+<p><a href="http://www.fao.org/faostat/en/#data/TP"><em>Crops and livestock products</em></a> are disseminated in <strong>FAOSTAT</strong> under <strong>Trade</strong>. In order to calculate their QI, there was a need to build up the historical data disseminated as described in <a href="QualityIndicatorsFramework.html#build-up-historical-data-disseminated-in-the-sws"><strong>Build up historical data disseminated in the SWS</strong></a>. Its correspondent data set in the SWS is in the domain <code>trade</code>, data set <code>total_trade_cpc_m49</code>.</p>
 </div>
-<div id="trade-live-animals" class="section level3">
-<h3><span class="header-section-number">1.1.4</span> <strong>Trade Live Animals</strong></h3>
-<p><em>Trade Live Animals</em> are disseminated in <strong>FAOSTAT</strong> under <strong>Trade</strong>. In order to calculate their QI, there was a need to build up the historical data disseminated as described in <a href="QualityIndicatorsFramework.html#build-up-historical-data-disseminated-in-the-sws"><strong>Build up historical data disseminated in the SWS</strong></a>. Its correspondent data set in the SWS is in the domain <code>trade</code>, data set <code>total_trade_cpc_m49</code>.</p>
+<div id="live-animals" class="section level3">
+<h3><span class="header-section-number">1.1.4</span> <strong>Live animals</strong></h3>
+<p><a href="http://www.fao.org/faostat/en/#data/TA"><em>Live animals</em></a> are disseminated in <strong>FAOSTAT</strong> under <strong>Trade</strong>. In order to calculate their QI, there was a need to build up the historical data disseminated as described in <a href="QualityIndicatorsFramework.html#build-up-historical-data-disseminated-in-the-sws"><strong>Build up historical data disseminated in the SWS</strong></a>. Its correspondent data set in the SWS is in the domain <code>trade</code>, data set <code>total_trade_cpc_m49</code>.</p>
 </div>
 <div id="fertilizers-by-nutrient" class="section level3">
 <h3><span class="header-section-number">1.1.5</span> <strong>Fertilizers by Nutrient</strong></h3>
-<p><em>Fertilizers by Nutrient</em> are disseminated in <strong>FAOSTAT</strong> under <strong>Fertilizers</strong>.</p>
+<p><a href="http://www.fao.org/faostat/en/#data/RFN"><em>Fertilizers by Nutrient</em></a> are disseminated in <strong>FAOSTAT</strong> under <strong>Inputs</strong>.</p>
 </div>
 <div id="fertilizers-by-product" class="section level3">
 <h3><span class="header-section-number">1.1.6</span> <strong>Fertilizers by Product</strong></h3>
-<p><em>Fertilizers by Product</em> are disseminated in <strong>FAOSTAT</strong> under <strong>Fertilizers</strong>.</p>
+<p><a href="http://www.fao.org/faostat/en/#data/RFB"><em>Fertilizers by Product</em></a> are disseminated in <strong>FAOSTAT</strong> under <strong>Inputs</strong>.</p>
 </div>
 </div>
 <div id="data-processing" class="section level2">
@@ -174,7 +172,7 @@ Figure 1.2: Workflow to retrieve historical data disseminated
           </div>
         </div>
       </div>
-<a href="preface.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 <a href="faoswsQualityIndicators.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
