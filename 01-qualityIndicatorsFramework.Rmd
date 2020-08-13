@@ -31,6 +31,10 @@ For each disseminated data to be migrated to SWS there is a need to convert:
 
 Converting areas, items and elements from one system to another one is usually straightforward. However, the flag conversion is possible only from SWS to FAOSTAT. The other way round is not feasible as there is no one-to-one correspondence. Therefore the only way to retrieve the flags is, given a combination country-element-item-year-value disseminated, convert areas, items and elements to the SWS format and searches for it in the SWS - including in the historical data. The two data points should match exactly in terms of values for that year. Thus one can find the SWS flag system. If the values in both systems do not match, the algorithm takes the most recent figure with its flags.
 
+## **Statistical Outputs**
+
+FAO is responsible for the dissemination of several statistical outputs including data on agriculture production and trade, forestry, fisheries, fertilizers, pesticides, producer prices and others. Along with the data, it is also important for transparency purposes to release information regarding its quality. Thus this book describes in details the process to compile the QI for each of these outputs, as they are composed of differents kinds of elements, items and areas. Moreover, each statistical process may have its own data processing, from harvesting to storage, with peculiarities that need to be taken into consideration when calculating the QI. 
+
 ### **Crops**
 
 [*Crops*](http://www.fao.org/faostat/en/#data/QC) are disseminated in **FAOSTAT** under **Production**. In order to calculate their QI, there was a need to build up the historical data disseminated as described in [**Build up historical data disseminated in the SWS**]. Its correspondent data set in the SWS is in the domain `agriculture`, data set `aproduction`. 
@@ -51,15 +55,20 @@ Converting areas, items and elements from one system to another one is usually s
 
 ### **Fertilizers by Nutrient**
 
-[*Fertilizers by Nutrient*](http://www.fao.org/faostat/en/#data/RFN) are disseminated in **FAOSTAT** under **Inputs**.
+[*Fertilizers by Nutrient*](http://www.fao.org/faostat/en/#data/RFN) are disseminated in **FAOSTAT** under **Inputs**. The _Eco Team_ responsible for this output has already created a dedicated dissemination data set in the SWS to storage the disseminated. Therefore there was a need to make a _copy_ of it into the domain _Disseminated Datasets_.
 
 
 ### **Fertilizers by Product**
 
-[*Fertilizers by Product*](http://www.fao.org/faostat/en/#data/RFB) are disseminated in **FAOSTAT** under **Inputs**.
+[*Fertilizers by Product*](http://www.fao.org/faostat/en/#data/RFB) are disseminated in **FAOSTAT** under **Inputs**. The _Eco Team_ responsible for this output has already created a dedicated dissemination data set in the SWS to storage the disseminated. Therefore there was a need to make a _copy_ of it into the domain _Disseminated Datasets_.
+
+### **Forestry Production and Trade**
+
+### **Fisheries**
+
+### **Producer Prices**
+
+### **Pesticides**
 
 
-## **Data Processing**
-
-## **Aggregates**
 

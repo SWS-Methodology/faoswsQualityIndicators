@@ -1,1 +1,6 @@
 # **faoswsQualityIndicators** {#faoswsQualityIndicators}
+
+
+## **Data Processing**
+
+## **Aggregates**
