@@ -1,1 +1,13 @@
 # **faoswsQualityIndicators** {#faoswsQualityIndicators}
+
+The generic workflow of the plugin looks like this.
+
+```{r fig.align='center', echo=FALSE, fig.cap='Workflow of the faoswsQualityIndicators module in the SWS'}
+knitr::include_graphics('images/workflow_plugin_qi.png', dpi = NA)
+```
+
+
+
+## **Data Processing**
+
+## **Aggregates**
