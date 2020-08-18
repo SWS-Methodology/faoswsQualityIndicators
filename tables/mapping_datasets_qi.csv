@@ -1,0 +1,9 @@
+Field,Description
+Domain SWS,The SWS domain which contains the data that goes to dissemination
+Dataset SWS,The id of the datasets that go to dissemination
+Dissemination Platform,The dissemination platform
+Dataset Code,The code used in the dissemination platform to represent that statistical output
+Dataset Name,The name of the datasets that go to dissemination
+Datatable Aggregate Group ID,The id of the datatable that contains the areas and items aggregates
+Dataset Name QI,The name of the dataset in the domain Quality Indicators
+Dataset ID QI,The id of the dataset in the domain Quality Indicators

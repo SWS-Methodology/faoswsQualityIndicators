@@ -1,5 +1,6 @@
 Chapter,Description
 Ch \@ref(QualityIndicatorsFramework),Provides the framework and entire overview.
+Ch \@ref(qualityIndicators),Describes the quality indicators to be calculated in the SWS.
 Ch \@ref(faoswsQualityIndicators),Provides the whole documentation of the module faoswsQualityIndicators.
 Ch \@ref(qualityIndicatorsApp),Provides the whole documentation of the Shiny App of the Quality Indicators.
 Appendix,"Describes all code lists, reference tables (datatables) and data sets."

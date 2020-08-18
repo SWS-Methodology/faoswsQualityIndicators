@@ -1,0 +1,25 @@
+# **faoswsQualityIndicators** {#faoswsQualityIndicators}
+
+The `faoswsQualityIndicators` plugin has a well-defined workflow, from input data $\Rightarrow$ reference files $\Rightarrow$ data manipulation $\Rightarrow$ quality indicator computation $\Rightarrow$ final output.
+
+```{r fig.align='center', echo=FALSE, out.width="80%", fig.cap='Workflow of the faoswsQualityIndicators module in the SWS for Crops Production'}
+knitr::include_graphics('images/workflow_plugin_qi.png', dpi = NA)
+```
+
+As shown in the above workflow, the input for the QI is the output of a data cycle process (data that goes to dissemination). Thus, after getting the aggregates at area and item level, the QI functions can be applied.
+Although the process is simple and requires no human intervention, it is important to note that the technical units have to be very careful with the data stored in the domain **Disseminated Datasets** as they will drive the QI.
+
+## **Quality Indicators - R functions**
+
+There are two functions designed to compute the QI, where each of them is responsible for a *quality dimension*. This implementation aims to produce indicators for _Accuracy_ and _Reliability_.
+
+Below you find the workflow of the R function `getAccuracy`.
+
+
+
+Below you find the workflow of the R function `getReliability`.
+
+
+## **Data Processing**
+
+## **Aggregates**

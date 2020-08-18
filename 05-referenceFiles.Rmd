@@ -1,0 +1,267 @@
+# (APPENDIX) Appendix {-}
+
+# SWS resources
+
+SWS resources are R modules, data tables, data sets, and code lists comprising a migration framework. Data tables are typically used as auxiliary data to help R modules to achieve their goals. The statistical domains in SWS, through code/reference lists, define the dimensions of the datasets. Therefore, datasets are primarily used to store code list - referenced values as either input and output in the SWS. 
+
+## Code lists
+
+Code lists, also called reference lists in SWS parlance, are the dimensions making up the data sets that are designed by the user to store analytical results from SWS modules. The dimensions are statistical-domain-specific and are defined by the technical unit to reflect its needs regarding data collection, processing, and dissemination while meeting FAO standards. Each data set dimension has a set of codes and their associated descriptions. Thus, code lists serve to the purpose of standardization, visualization, and metadata by associating standardized codes to standardized names in the SWS data set outputs. A typical SWS compliant data set has, therefore, the following dimensions/reference lists:
+        
+        
+- **Geographic area**. Representing a spatial scale the information is measured at. For example, countries, territories, regional aggregates, regional special groups aggregates, global aggregates. 
+
+- **Items**. Those one wants to take a measurement from. For example, commodities, commodity groups, land use types, species, etc. Typical item dimension names are **measuredItemCPC**, ***measuredItemHS**, **measuredItem**. 
+
+- **Elements**. Often representing a measurement that can be taken across different items. For example, area, production, share. Typical element dimension names are **measuredElement**, ***measuredElementTrade**, **aquastatElement**.
+
+- **Time** (the time unit the data is displayed for: year, months, etc). **timePointYears** represents year.
+
+- **Flag** (A standardized label indicating origin and/or nature of a number in the data set, e.g. <blank> (Official number)). Please check the [OCS statistical standards](http://intranet.fao.org/statistics_coordination_portal/standards_for_quality_compliance/) and the [flags document](http://intranet.fao.org/fileadmin/user_upload/scp/Standards_for_quality_compliance/SSS_Observation_Status_Codes__Flags__endorsed__December_2016_.pdf ) to understand the **flagObservationStatus** rational and obtain the description of flags. 
+<br>
+
+
+```{r tabFlagObservationStatus, echo=FALSE, message=FALSE}
+require(data.table)
+require(kableExtra)
+d = data.table::fread("tables/flagObservationStatus.csv")
+knitr::kable(d, 
+             align = 'l',
+             # escape = T, 
+             # format = "html",
+             # table.attr='class="table-fixed-header"',
+             caption = "Observation Status Flags Annotations") %>%
+  row_spec(0, background = "#5191c8") %>% 
+  kableExtra::kable_styling(font_size = 14) %>% 
+  kable_styling(fixed_thead = T) 
+  
+```
+
+
+
+<br>
+- **Method** (A standardized label indicating method utilized to obtain a number in the data set. Please check the [OCS statistical standards](http://intranet.fao.org/statistics_coordination_portal/standards_for_quality_compliance/) and the [flags document](http://intranet.fao.org/fileadmin/user_upload/scp/Standards_for_quality_compliance/SSS_Observation_Status_Codes__Flags__endorsed__December_2016_.pdf ) to understand the **flagMethod** rational and  obtain the description of flags. 
+
+```{r tabFlagMethod, echo=FALSE, message=FALSE}
+require(data.table)
+require(kableExtra)
+d = data.table::fread("tables/flagMethod.csv")
+knitr::kable(d, 
+             align = 'l',
+             # escape = T, 
+             # format = "html",
+             # table.attr='class="table-fixed-header"',
+             caption = "Method flags") %>%
+ row_spec(0, background = "#5191c8") %>% 
+  kableExtra::kable_styling(font_size = 14) %>% 
+  kable_styling(fixed_thead = T) 
+  
+```
+
+<br> 
+
+## Datatables
+
+Datatables are mainly used to store information helping R modules to output analytical results. Information in datatables can be of a number of types. For example, conversion factors, arithmetic formulas, mapping between flags, mapping between international classifications, etc. In SWS hierarchy, all datatables reside in a given statistical domain. 
+Variable names (aka column names) in SWS Datatables are more flexible in terms of the names they can take than SWS datasets. One can find SWS Datatables naming variables as element_code, element_code_sws, element_code_faostat, etc. Likewise, columns describing countries across different datatables may have different classification systems. This flexibility in Datatables is beneficial as it allows to accommodate different auxiliary information. 
+In the Quality Indicators framework, the datatables are in the domain **Quality Indicators**. Below is a list of current available and filled datatables in this domain.
+
+
+## Mapping Datasets QI {-}
+
+- **Datatable:** `Mapping Datasets QI`
+- **Domain:** Quality Indicators
+- **Usage:** A data table with the reference data used for each statistical output.
+
+```{r mappingDatasetsQI, echo=FALSE, message=FALSE}
+require(data.table)
+require(kableExtra)
+d = data.table::fread("tables/mapping_datasets_qi.csv")
+knitr::kable(d, 
+             align = 'l',
+             # escape = T, 
+             # format = "html",
+             # table.attr='class="table-fixed-header"',
+             caption = "Columns description of the data table: Mapping Datasets QI") %>%
+  row_spec(0, background = "#5191c8") %>% 
+  kableExtra::kable_styling(font_size = 14) %>% 
+  kable_styling(fixed_thead = T) 
+  
+```
+
+## Mapping Aggregate Groups - CROPS {-}
+
+- **Datatable:** `Mapping Aggregate Groups - CROPS`
+- **Domain:** Quality Indicators
+- **Usage:** A data table with the area and item groups of Crops Production.
+
+```{r mappingAggGroupsCrops, echo=FALSE, message=FALSE}
+require(data.table)
+require(kableExtra)
+d = data.table::fread("tables/mapping_agg_groups_crops.csv")
+knitr::kable(d, 
+             align = 'l',
+             # escape = T, 
+             # format = "html",
+             # table.attr='class="table-fixed-header"',
+             caption = "Columns description of the data table: Mapping Aggregate Groups - CROPS") %>%
+  row_spec(0, background = "#5191c8") %>% 
+  kableExtra::kable_styling(font_size = 14) %>% 
+  kable_styling(fixed_thead = T) 
+  
+```
+
+## Mapping Aggregate Groups - Livestock Production {-}
+
+- **Datatable:** `Mapping Aggregate Groups - Livestock Production`
+- **Domain:** Quality Indicators
+- **Usage:** A data table with the area and item groups of Livestock Production.
+
+```{r mappingAggGroupsLivestockProduction, echo=FALSE, message=FALSE}
+require(data.table)
+require(kableExtra)
+d = data.table::fread("tables/mapping_agg_groups_livestock_production.csv")
+knitr::kable(d, 
+             align = 'l',
+             # escape = T, 
+             # format = "html",
+             # table.attr='class="table-fixed-header"',
+             caption = "Columns description of the data table: Mapping Aggregate Groups - Livestock Production") %>%
+  row_spec(0, background = "#5191c8") %>% 
+  kableExtra::kable_styling(font_size = 14) %>% 
+  kable_styling(fixed_thead = T) 
+  
+```
+
+## Mapping Aggregate Groups - Trade Crops Livestock {-}
+
+- **Datatable:** `Mapping Aggregate Groups - Trade Crops Livestock`
+- **Domain:** Quality Indicators
+- **Usage:** A data table with the area and item groups of Trade Crops Livestock.
+
+```{r mappingAggGroupsTradeCropsLivestock, echo=FALSE, message=FALSE}
+require(data.table)
+require(kableExtra)
+d = data.table::fread("tables/mapping_agg_groups_trade_crops_livestock.csv")
+knitr::kable(d, 
+             align = 'l',
+             # escape = T, 
+             # format = "html",
+             # table.attr='class="table-fixed-header"',
+             caption = "Columns description of the data table: Mapping Aggregate Groups - Trade Crops Livestock") %>%
+  row_spec(0, background = "#5191c8") %>% 
+  kableExtra::kable_styling(font_size = 14) %>% 
+  kable_styling(fixed_thead = T) 
+  
+```
+## Mapping Aggregate Groups - Trade Live Animals {-}
+
+- **Datatable:** `Mapping Aggregate Groups - Trade Live Animals`
+- **Domain:** Quality Indicators
+- **Usage:** A data table with the area and item groups of Trade Live Animals.
+
+```{r mappingAggGroupsTradeLiveAnimals, echo=FALSE, message=FALSE}
+require(data.table)
+require(kableExtra)
+d = data.table::fread("tables/mapping_agg_groups_trade_live_animals.csv")
+knitr::kable(d, 
+             align = 'l',
+             # escape = T, 
+             # format = "html",
+             # table.attr='class="table-fixed-header"',
+             caption = "Columns description of the data table: Mapping Aggregate Groups - Trade Live Animals") %>%
+  row_spec(0, background = "#5191c8") %>% 
+  kableExtra::kable_styling(font_size = 14) %>% 
+  kable_styling(fixed_thead = T) 
+  
+```
+
+## Mapping Aggregate Groups - Forestry Production and Trade {-}
+
+- **Datatable:** `Mapping Aggregate Groups - Forestry Production and Trade`
+- **Domain:** Quality Indicators
+- **Usage:** A data table with the area and item groups of Forestry Production and Trade.
+
+```{r mappingAggGroupsForestry, echo=FALSE, message=FALSE}
+require(data.table)
+require(kableExtra)
+d = data.table::fread("tables/mapping_agg_groups_forestry.csv")
+knitr::kable(d, 
+             align = 'l',
+             # escape = T, 
+             # format = "html",
+             # table.attr='class="table-fixed-header"',
+             caption = "Columns description of the data table: Mapping Aggregate Groups - Forestry Production and Trade") %>%
+  row_spec(0, background = "#5191c8") %>% 
+  kableExtra::kable_styling(font_size = 14) %>% 
+  kable_styling(fixed_thead = T) 
+  
+```
+
+## Mapping Aggregate Groups - Fertilizers Nutrient {-}
+
+- **Datatable:** `Mapping Aggregate Groups - Fertilizers Nutrient`
+- **Domain:** Quality Indicators
+- **Usage:** A data table with the area and item groups of Fertilizers Nutrient.
+
+```{r mappingAggGroupsFertNutr, echo=FALSE, message=FALSE}
+require(data.table)
+require(kableExtra)
+d = data.table::fread("tables/mapping_agg_groups_fertilizers_nutrients.csv")
+knitr::kable(d, 
+             align = 'l',
+             # escape = T, 
+             # format = "html",
+             # table.attr='class="table-fixed-header"',
+             caption = "Columns description of the data table: Mapping Aggregate Groups - Fertilizers Nutrient") %>%
+  row_spec(0, background = "#5191c8") %>% 
+  kableExtra::kable_styling(font_size = 14) %>% 
+  kable_styling(fixed_thead = T) 
+  
+```
+
+## Mapping Aggregate Groups - Pesticides Trade {-}
+
+- **Datatable:** `Mapping Aggregate Groups - Pesticides Trade`
+- **Domain:** Quality Indicators
+- **Usage:** A data table with the area and item groups of Pesticides Trade.
+
+```{r mappingAggGroupsPestTrade, echo=FALSE, message=FALSE}
+require(data.table)
+require(kableExtra)
+d = data.table::fread("tables/mapping_agg_groups_pest_trade.csv")
+knitr::kable(d, 
+             align = 'l',
+             # escape = T, 
+             # format = "html",
+             # table.attr='class="table-fixed-header"',
+             caption = "Columns description of the data table: Mapping Aggregate Groups - Pesticides Trade") %>%
+  row_spec(0, background = "#5191c8") %>% 
+  kableExtra::kable_styling(font_size = 14) %>% 
+  kable_styling(fixed_thead = T) 
+  
+```
+
+## Mapping Aggregate Groups - Pesticides Trade {-}
+
+- **Datatable:** `Mapping Aggregate Groups - Pesticides Use`
+- **Domain:** Quality Indicators
+- **Usage:** A data table with the area and item groups of Pesticides Use
+
+```{r mappingAggGroupsPestUse, echo=FALSE, message=FALSE}
+require(data.table)
+require(kableExtra)
+d = data.table::fread("tables/mapping_agg_groups_pest_use.csv")
+knitr::kable(d, 
+             align = 'l',
+             # escape = T, 
+             # format = "html",
+             # table.attr='class="table-fixed-header"',
+             caption = "Columns description of the data table: Mapping Aggregate Groups - Pesticides Use") %>%
+  row_spec(0, background = "#5191c8") %>% 
+  kableExtra::kable_styling(font_size = 14) %>% 
+  kable_styling(fixed_thead = T) 
+  
+```
+
+
