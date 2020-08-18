@@ -30,7 +30,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html"/>
+<link rel="prev" href="preface.html"/>
 <link rel="next" href="faoswsQualityIndicators.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -49,6 +49,7 @@
 
 
 
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
 
 
 
@@ -65,10 +66,11 @@
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="index.html#welcome"><strong>Welcome</strong></a><ul>
-<li><a href="index.html#how-to-use-this-book"><strong>How to use this book</strong></a></li>
-<li><a href="index.html#why-to-use-the-sws"><strong>Why to use the SWS</strong></a></li>
-<li><a href="index.html#migration-actors"><strong>Migration actors</strong></a></li>
+<li><a href="index.html#welcome"><strong>Welcome</strong></a></li>
+<li><a href="preface.html#preface"><strong>Preface</strong></a><ul>
+<li><a href="preface.html#how-to-use-this-book"><strong>How to use this book</strong></a></li>
+<li><a href="preface.html#why-to-use-the-sws"><strong>Why to use the SWS</strong></a></li>
+<li><a href="preface.html#migration-actors"><strong>Migration actors</strong></a></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="QualityIndicatorsFramework.html"><a href="QualityIndicatorsFramework.html"><i class="fa fa-check"></i><b>1</b> <strong>Quality Indicators Framework</strong></a><ul>
 <li class="chapter" data-level="1.1" data-path="QualityIndicatorsFramework.html"><a href="QualityIndicatorsFramework.html#build-up-historical-data-disseminated-in-the-sws"><i class="fa fa-check"></i><b>1.1</b> <strong>Build up historical data disseminated in the SWS</strong></a></li>
@@ -118,7 +120,7 @@
 <p>The Quality Indicators (QI) module is meant to take place right after a statsitical process has been validated. This means that a technical unit has already finalized its entire data processing (<strong>questionnaire dispatch <span class="math inline">\(\Rightarrow\)</span> data collection <span class="math inline">\(\Rightarrow\)</span> data entry <span class="math inline">\(\Rightarrow\)</span> data cleaning <span class="math inline">\(\Rightarrow\)</span> imputation <span class="math inline">\(\Rightarrow\)</span> validation</strong>) and it is ready to release the data. Thus, the <em>officer in charge</em> can analyse the quality of the data before disseminating and may return to any step of the process if he/she deems necessary.</p>
 <p>The workflow of the QI module is shown below. As mentioned above, it starts when the data is ready to be released. In the SWS context, this means that the technical unit can <em>tag</em> its data set and materialize it in the SWS domain <strong>Disseminated Datasets</strong>. Therefore, the <strong>faoswsQualityIndicators</strong> module can compile the indicators and save them in a dedicated dataset in the domain <strong>Quality Indicators</strong>. In this way, the <em>officer in charge</em> can find the results either in the SWS or in the <em>Shiny App</em>.</p>
 <p>It is important to highlight that each technical unit is responsible for its own data in the domain <strong>Disseminated Datasets</strong>, which means that the technical unit is the only one who is able to populate/modify its own data.</p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-1"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-3"></span>
 <img src="images/overall_workflow_QI.png" alt="Overall Workflow of the Quality Indicators module in the SWS"  />
 <p class="caption">
 Figure 1.1: Overall Workflow of the Quality Indicators module in the SWS
@@ -128,7 +130,7 @@ Figure 1.1: Overall Workflow of the Quality Indicators module in the SWS
 <h2><span class="header-section-number">1.1</span> <strong>Build up historical data disseminated in the SWS</strong></h2>
 <p>It is known that the SWS was built to be a working system and not a dissemination platform. This means that unless a technical unit creates a dedicated data set to store only the dissemination data, this data will be found only in the dissemination platform because as time passes, the data may be revised or another imputation method tested and not necessarily be disseminated for various reasons. Thus, there might be differences between the data found in the two systems.</p>
 <p>Despite this issue, it is still worth to compute the QI for the historical data disseminated. In order to do so, the CSI-SWS team had to retrieve the data from the dissemination platforms (e.g. FAOSTAT) and bring it back to the SWS for the technical units that did not create the <em>data dissemination</em>. This exercise is illustrated in the below figure.</p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-2"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-4"></span>
 <img src="images/legacy_data_workflow_QI.png" alt="Workflow to retrieve historical data disseminated"  />
 <p class="caption">
 Figure 1.2: Workflow to retrieve historical data disseminated
@@ -190,7 +192,7 @@ Figure 1.2: Workflow to retrieve historical data disseminated
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="preface.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 <a href="faoswsQualityIndicators.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>

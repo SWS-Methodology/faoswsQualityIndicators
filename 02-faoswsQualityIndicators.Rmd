@@ -2,7 +2,7 @@
 
 The `faoswsQualityIndicators` plugin has a well-defined workflow, from input data $\Rightarrow$ reference files $\Rightarrow$ data manipulation $\Rightarrow$ quality indicator computation $\Rightarrow$ final output.
 
-```{r fig.align='center', echo=FALSE, out.width="70%", fig.cap='Workflow of the faoswsQualityIndicators module in the SWS for Crops Production'}
+```{r fig.align='center', echo=FALSE, out.width="150%", fig.cap='Workflow of the faoswsQualityIndicators module in the SWS for Crops Production'}
 knitr::include_graphics('images/workflow_plugin_qi.png', dpi = NA)
 ```
 
