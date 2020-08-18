@@ -1,6 +1,5 @@
 # **faoswsQualityIndicators** {#faoswsQualityIndicators}
 
-
 The `faoswsQualityIndicators` plugin has a well-defined workflow, from input data $\Rightarrow$ reference files $\Rightarrow$ data manipulation $\Rightarrow$ quality indicator computation $\Rightarrow$ final output.
 
 ```{r fig.align='center', echo=FALSE, fig.cap='Workflow of the faoswsQualityIndicators module in the SWS for Crops Production'}
