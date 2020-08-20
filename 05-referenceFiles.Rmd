@@ -265,3 +265,91 @@ knitr::kable(d,
 ```
 
 
+## Mapping Aggregate Groups - Land Use {-}
+
+- **Datatable:** `Mapping Aggregate Groups - Land Use`
+- **Domain:** Quality Indicators
+- **Usage:** A data table with the area and item groups of Land Use
+
+```{r mappingAggGroupsLandUse, echo=FALSE, message=FALSE}
+require(data.table)
+require(kableExtra)
+d = data.table::fread("tables/mapping_agg_groups_land_use.csv")
+knitr::kable(d, 
+             align = 'l',
+             # escape = T, 
+             # format = "html",
+             # table.attr='class="table-fixed-header"',
+             caption = "Columns description of the data table: Mapping Aggregate Groups - Land Use") %>%
+  row_spec(0, background = "#5191c8") %>% 
+  kableExtra::kable_styling(font_size = 14) %>% 
+  kable_styling(fixed_thead = T) 
+  
+```
+
+## Mapping Aggregate Groups - Prices {-}
+
+- **Datatable:** `Mapping Aggregate Groups - Prices`
+- **Domain:** Quality Indicators
+- **Usage:** A data table with the area and item groups of Prices
+
+```{r mappingAggGroupsPrices, echo=FALSE, message=FALSE}
+require(data.table)
+require(kableExtra)
+d = data.table::fread("tables/mapping_agg_groups_prices.csv")
+knitr::kable(d, 
+             align = 'l',
+             # escape = T, 
+             # format = "html",
+             # table.attr='class="table-fixed-header"',
+             caption = "Columns description of the data table: Mapping Aggregate Groups - Prices") %>%
+  row_spec(0, background = "#5191c8") %>% 
+  kableExtra::kable_styling(font_size = 14) %>% 
+  kable_styling(fixed_thead = T) 
+  
+```
+
+
+## flagObservationStatus - QI {-}
+
+- **Datatable:** `flagObservationStatus - QI`
+- **Domain:** Quality Indicators
+- **Usage:** A data table with the flag of observatiob status, its description and type.
+
+```{r flagObservationStatus, echo=FALSE, message=FALSE}
+require(data.table)
+require(kableExtra)
+d = data.table::fread("tables/flagObservationStatus.csv")
+knitr::kable(d, 
+             align = 'l',
+             # escape = T, 
+             # format = "html",
+             # table.attr='class="table-fixed-header"',
+             caption = "Columns description of the data table: flagObservationStatus - QI") %>%
+  row_spec(0, background = "#5191c8") %>% 
+  kableExtra::kable_styling(font_size = 14) %>% 
+  kable_styling(fixed_thead = T) 
+  
+```
+
+## Dataset Code List QI {-}
+
+- **Datatable:** `Dataset Code List QI`
+- **Domain:** Quality Indicators
+- **Usage:** A data table with the list of countries, items and elements by each statistical output.
+
+```{r datasetCodeListQI, echo=FALSE, message=FALSE}
+require(data.table)
+require(kableExtra)
+d = data.table::fread("tables/dataset_code_list_qi.csv")
+knitr::kable(d, 
+             align = 'l',
+             # escape = T, 
+             # format = "html",
+             # table.attr='class="table-fixed-header"',
+             caption = "Columns description of the data table: Dataset Code List QI") %>%
+  row_spec(0, background = "#5191c8") %>% 
+  kableExtra::kable_styling(font_size = 14) %>% 
+  kable_styling(fixed_thead = T) 
+  
+```

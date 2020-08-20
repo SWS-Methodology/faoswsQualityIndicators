@@ -1,0 +1,10 @@
+Field,Description
+Dataset,Name of the statistical output
+Area,Country code M49
+Area Name,Country Name
+Element,Element code
+Element Name,Element description
+Item ,Item code
+Item Name,Item description
+Quality Indicators,Quality Indicators code
+Quality Indicators Name,Quality Indicators name

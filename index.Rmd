@@ -60,6 +60,7 @@ knitr::kable(d) %>%
 
 
 
+
 ## **Why to use the SWS** {-}
 
 The Statistical Working System (SWS) is a corporate system that supports data collection, processing and validation, metadata management, and quality assessment of FAO's main statistical domains in line with the Generic Statistical Business Process Model. It has a dual nature – both technological and statistical – and for this reason, is developed by two different teams (the IT Division [CSI] and the Statistics Division [ESS]). The SWS provides an end-to-end solution for inputting and storing raw data, performing automated statistical processes (e.g. imputation, validation, etc.), and producing data that are ready for dissemination. Moreover, the reasons why you should use the SWS are:

@@ -1,0 +1,13 @@
+Field,Description
+Dataset Code,Dataset code in the dissemination platform
+Dataset Name,Dataset name in the dissemination platform
+Var Type,Type of var: area or item
+Var Group Code,Var group code in the dissemination platform
+Var Code,Var code in the dissemination platform
+Factor,Factor 
+GroupDomainVar_LevelInt,
+GroupDomainVar_LevelExt,
+Var Group Name,Var group name in the dissemination platform
+Var Name,Var name in the dissemination platform
+Var Group Code SWS,Var group code in the SWS
+Var Code SWS,Var code in the SWS

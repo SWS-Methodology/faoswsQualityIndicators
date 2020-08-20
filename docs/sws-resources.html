@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2020-08-18" />
+<meta name="date" content="2020-08-19" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -66,11 +66,10 @@
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="index.html#welcome"><strong>Welcome</strong></a></li>
-<li><a href="preface.html#preface"><strong>Preface</strong></a><ul>
-<li><a href="preface.html#how-to-use-this-book"><strong>How to use this book</strong></a></li>
-<li><a href="preface.html#why-to-use-the-sws"><strong>Why to use the SWS</strong></a></li>
-<li><a href="preface.html#migration-actors"><strong>Migration actors</strong></a></li>
+<li><a href="index.html#welcome"><strong>Welcome</strong></a><ul>
+<li><a href="index.html#how-to-use-this-book"><strong>How to use this book</strong></a></li>
+<li><a href="index.html#why-to-use-the-sws"><strong>Why to use the SWS</strong></a></li>
+<li><a href="index.html#migration-actors"><strong>Migration actors</strong></a></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="QualityIndicatorsFramework.html"><a href="QualityIndicatorsFramework.html"><i class="fa fa-check"></i><b>1</b> <strong>Quality Indicators Framework</strong></a><ul>
 <li class="chapter" data-level="1.1" data-path="QualityIndicatorsFramework.html"><a href="QualityIndicatorsFramework.html#build-up-historical-data-disseminated-in-the-sws"><i class="fa fa-check"></i><b>1.1</b> <strong>Build up historical data disseminated in the SWS</strong></a></li>
@@ -110,6 +109,10 @@
 <li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#mapping-aggregate-groups---fertilizers-nutrient"><i class="fa fa-check"></i>Mapping Aggregate Groups - Fertilizers Nutrient</a></li>
 <li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#mapping-aggregate-groups---pesticides-trade"><i class="fa fa-check"></i>Mapping Aggregate Groups - Pesticides Trade</a></li>
 <li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#mapping-aggregate-groups---pesticides-trade-1"><i class="fa fa-check"></i>Mapping Aggregate Groups - Pesticides Trade</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#mapping-aggregate-groups---land-use"><i class="fa fa-check"></i>Mapping Aggregate Groups - Land Use</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#mapping-aggregate-groups---prices"><i class="fa fa-check"></i>Mapping Aggregate Groups - Prices</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#flagobservationstatus---qi"><i class="fa fa-check"></i>flagObservationStatus - QI</a></li>
+<li class="chapter" data-level="" data-path="sws-resources.html"><a href="sws-resources.html#dataset-code-list-qi"><i class="fa fa-check"></i>Dataset Code List QI</a></li>
 </ul></li>
 </ul>
 
@@ -142,6 +145,7 @@
 <li><p><strong>Flag</strong> (A standardized label indicating origin and/or nature of a number in the data set, e.g. <blank> (Official number)). Please check the <a href="http://intranet.fao.org/statistics_coordination_portal/standards_for_quality_compliance/">OCS statistical standards</a> and the <a href="http://intranet.fao.org/fileadmin/user_upload/scp/Standards_for_quality_compliance/SSS_Observation_Status_Codes__Flags__endorsed__December_2016_.pdf">flags document</a> to understand the <strong>flagObservationStatus</strong> rational and obtain the description of flags.
 <br></p></li>
 </ul>
+<pre><code>## Warning: package &#39;kableExtra&#39; was built under R version 3.4.4</code></pre>
 <table class="table table" style="font-size: 14px; margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;">
 <caption style="font-size: initial !important;">
 <span id="tab:tabFlagObservationStatus">Table A.1: </span>Observation Status Flags Annotations
@@ -149,169 +153,36 @@
 <thead>
 <tr>
 <th style="text-align:left;background-color: #5191c8 !important;position: sticky; top:0; background-color: #FFFFFF;">
-Flag
+Field
 </th>
 <th style="text-align:left;background-color: #5191c8 !important;position: sticky; top:0; background-color: #FFFFFF;">
 Description
-</th>
-<th style="text-align:left;background-color: #5191c8 !important;position: sticky; top:0; background-color: #FFFFFF;">
-Annotation
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align:left;">
-&lt;blank&gt;
+Flag Observation Status
 </td>
 <td style="text-align:left;">
-Official figure
-</td>
-<td style="text-align:left;">
-Observation reported to FAO by official statistical government agencies.
+The flag of observation status
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-B
+Flag Description
 </td>
 <td style="text-align:left;">
-Time series break
-</td>
-<td style="text-align:left;">
-Break observations are characterized as such whendifferent content exist or a different methodology has beenapplied to this observation as compared with the preceding one (the one given for the previous period).
+Description of the flag
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-E
+Type
 </td>
 <td style="text-align:left;">
-Estimated value
-</td>
-<td style="text-align:left;">
-Observation obtained through an estimation methodology (e.g. to produce back-casts) or based on the use of a limited amount of data or ad hoc sampling and through additional calculations (e.g. to produce a value at an early stage of the production stage while not all data are available). It may also be used in case of experimental data (e.g. in the context of a pilot ahead of a full scale production process) or in case of data of (anticipated/assessed) low quality. If needed, additional (uncoded) information can be provided through (free text) “comments” at the observation level or at a higher level.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-F
-</td>
-<td style="text-align:left;">
-Forecast value
-</td>
-<td style="text-align:left;">
-Value deemed to assess the magnitude which a quantity will assume at some future point of time (as distinct from "“estimated value”" which attempts to assess the magnitude of an already existent quantity).
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-I
-</td>
-<td style="text-align:left;">
-Imputed value
-</td>
-<td style="text-align:left;">
-Observation imputed by FAO to replace or fill gaps in national data series, in line with the recommendations of the Committee for the Coordination of Statistical Activities (CCSA).
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-O
-</td>
-<td style="text-align:left;">
-Missing value
-</td>
-<td style="text-align:left;">
-This code is to be used when no distinction is made between the reasons why data are missing. Data can be missing due to various reasons: data do not exist, are insignificant (or not collected because they are below a certain threshold), are unreliable, are not relevant for the period, or other reason not elsewhere specified.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-M
-</td>
-<td style="text-align:left;">
-Missing value (data cannot exist, not applicable)
-</td>
-<td style="text-align:left;">
-Used to denote empty cells resulting from the impossibility to collect a statistical value (e.g. a particular education level or type of institution may be not applicable to a given country’s education system).
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Q
-</td>
-<td style="text-align:left;">
-Missing value; suppressed
-</td>
-<td style="text-align:left;">
-Used when data are suppressed due to statistical confidentiality considerations.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-N
-</td>
-<td style="text-align:left;">
-Not significant (negligible)
-</td>
-<td style="text-align:left;">
-An observation is below the unit precision level.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-P
-</td>
-<td style="text-align:left;">
-Provisional value
-</td>
-<td style="text-align:left;">
-An observation is characterized as “provisional” when the source agency –while it bases its calculations on its standard production methodology –considers that the data, almost certainly, are expected to be revised.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-R
-</td>
-<td style="text-align:left;">
-Revised
-</td>
-<td style="text-align:left;">
-Revised official figure.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-S
-</td>
-<td style="text-align:left;">
-Exceptional event
-</td>
-<td style="text-align:left;">
-Exceptional events such as earthquake, massive forest fire, draught and flooding that occurred in the corresponding period that may have affected the observation or caused a missing value.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-T
-</td>
-<td style="text-align:left;">
-Unofficial figure
-</td>
-<td style="text-align:left;">
-Observation reported by non-official or semi-official sources. Includes semi-official figure. Includes data from trade organizations (e.g. International Grain Council, International Sugar Organization etc.).
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-X
-</td>
-<td style="text-align:left;">
-Figure from international organizations
-</td>
-<td style="text-align:left;">
-Observations, both official and non-official, reported by governmental international organizations (e.g. UN, ILO, WB, UNESCO, Eurostat etc. specification on which international organization is provided in the metadata).
+Type of flag (e.g. official, imputed … )
 </td>
 </tr>
 </tbody>
@@ -1483,6 +1354,390 @@ Var Code SWS
 </td>
 <td style="text-align:left;">
 Var code in the SWS
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="mapping-aggregate-groups---land-use" class="section level2 unnumbered">
+<h2>Mapping Aggregate Groups - Land Use</h2>
+<ul>
+<li><strong>Datatable:</strong> <code>Mapping Aggregate Groups - Land Use</code></li>
+<li><strong>Domain:</strong> Quality Indicators</li>
+<li><strong>Usage:</strong> A data table with the area and item groups of Land Use</li>
+</ul>
+<table class="table table" style="font-size: 14px; margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:mappingAggGroupsLandUse">Table A.12: </span>Columns description of the data table: Mapping Aggregate Groups - Land Use
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;background-color: #5191c8 !important;position: sticky; top:0; background-color: #FFFFFF;">
+Field
+</th>
+<th style="text-align:left;background-color: #5191c8 !important;position: sticky; top:0; background-color: #FFFFFF;">
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Dataset Code
+</td>
+<td style="text-align:left;">
+Dataset code in the dissemination platform
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Dataset Name
+</td>
+<td style="text-align:left;">
+Dataset name in the dissemination platform
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Var Type
+</td>
+<td style="text-align:left;">
+Type of var: area or item
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Var Group Code
+</td>
+<td style="text-align:left;">
+Var group code in the dissemination platform
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Var Code
+</td>
+<td style="text-align:left;">
+Var code in the dissemination platform
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Factor
+</td>
+<td style="text-align:left;">
+Factor
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+GroupDomainVar_LevelInt
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+GroupDomainVar_LevelExt
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Var Group Name
+</td>
+<td style="text-align:left;">
+Var group name in the dissemination platform
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Var Name
+</td>
+<td style="text-align:left;">
+Var name in the dissemination platform
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Var Group Code SWS
+</td>
+<td style="text-align:left;">
+Var group code in the SWS
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Var Code SWS
+</td>
+<td style="text-align:left;">
+Var code in the SWS
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="mapping-aggregate-groups---prices" class="section level2 unnumbered">
+<h2>Mapping Aggregate Groups - Prices</h2>
+<ul>
+<li><strong>Datatable:</strong> <code>Mapping Aggregate Groups - Prices</code></li>
+<li><strong>Domain:</strong> Quality Indicators</li>
+<li><strong>Usage:</strong> A data table with the area and item groups of Prices</li>
+</ul>
+<table class="table table" style="font-size: 14px; margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:mappingAggGroupsPrices">Table A.13: </span>Columns description of the data table: Mapping Aggregate Groups - Prices
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;background-color: #5191c8 !important;position: sticky; top:0; background-color: #FFFFFF;">
+Field
+</th>
+<th style="text-align:left;background-color: #5191c8 !important;position: sticky; top:0; background-color: #FFFFFF;">
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Dataset Code
+</td>
+<td style="text-align:left;">
+Dataset code in the dissemination platform
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Dataset Name
+</td>
+<td style="text-align:left;">
+Dataset name in the dissemination platform
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Var Type
+</td>
+<td style="text-align:left;">
+Type of var: area or item
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Var Group Code
+</td>
+<td style="text-align:left;">
+Var group code in the dissemination platform
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Var Code
+</td>
+<td style="text-align:left;">
+Var code in the dissemination platform
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Factor
+</td>
+<td style="text-align:left;">
+Factor
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+GroupDomainVar_LevelInt
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+GroupDomainVar_LevelExt
+</td>
+<td style="text-align:left;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Var Group Name
+</td>
+<td style="text-align:left;">
+Var group name in the dissemination platform
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Var Name
+</td>
+<td style="text-align:left;">
+Var name in the dissemination platform
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Var Group Code SWS
+</td>
+<td style="text-align:left;">
+Var group code in the SWS
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Var Code SWS
+</td>
+<td style="text-align:left;">
+Var code in the SWS
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="flagobservationstatus---qi" class="section level2 unnumbered">
+<h2>flagObservationStatus - QI</h2>
+<ul>
+<li><strong>Datatable:</strong> <code>flagObservationStatus - QI</code></li>
+<li><strong>Domain:</strong> Quality Indicators</li>
+<li><strong>Usage:</strong> A data table with the flag of observatiob status, its description and type.</li>
+</ul>
+<table class="table table" style="font-size: 14px; margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:flagObservationStatus">Table A.14: </span>Columns description of the data table: flagObservationStatus - QI
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;background-color: #5191c8 !important;position: sticky; top:0; background-color: #FFFFFF;">
+Field
+</th>
+<th style="text-align:left;background-color: #5191c8 !important;position: sticky; top:0; background-color: #FFFFFF;">
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Flag Observation Status
+</td>
+<td style="text-align:left;">
+The flag of observation status
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Flag Description
+</td>
+<td style="text-align:left;">
+Description of the flag
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Type
+</td>
+<td style="text-align:left;">
+Type of flag (e.g. official, imputed … )
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="dataset-code-list-qi" class="section level2 unnumbered">
+<h2>Dataset Code List QI</h2>
+<ul>
+<li><strong>Datatable:</strong> <code>Dataset Code List QI</code></li>
+<li><strong>Domain:</strong> Quality Indicators</li>
+<li><strong>Usage:</strong> A data table with the list of countries, items and elements by each statistical output.</li>
+</ul>
+<table class="table table" style="font-size: 14px; margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:datasetCodeListQI">Table A.15: </span>Columns description of the data table: Dataset Code List QI
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;background-color: #5191c8 !important;position: sticky; top:0; background-color: #FFFFFF;">
+Field
+</th>
+<th style="text-align:left;background-color: #5191c8 !important;position: sticky; top:0; background-color: #FFFFFF;">
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Dataset
+</td>
+<td style="text-align:left;">
+Name of the statistical output
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Area
+</td>
+<td style="text-align:left;">
+Country code M49
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Area Name
+</td>
+<td style="text-align:left;">
+Country Name
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Element
+</td>
+<td style="text-align:left;">
+Element code
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Element Name
+</td>
+<td style="text-align:left;">
+Element description
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Item
+</td>
+<td style="text-align:left;">
+Item code
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Item Name
+</td>
+<td style="text-align:left;">
+Item description
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Quality Indicators
+</td>
+<td style="text-align:left;">
+Quality Indicators code
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Quality Indicators Name
+</td>
+<td style="text-align:left;">
+Quality Indicators name
 </td>
 </tr>
 </tbody>
