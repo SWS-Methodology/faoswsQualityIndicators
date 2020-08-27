@@ -64,6 +64,9 @@ FAO is responsible for the dissemination of several statistical outputs includin
 
 ### **Forestry Production and Trade**
 
+[*Forestry Production and Trade*](http://www.fao.org/faostat/en/#data/FO) are disseminated in **FAOSTAT** under **Forestry**. In order to calculate their QI, there was a need to build up the historical data disseminated as described in [**Build up historical data disseminated in the SWS**]. Its correspondent data set in the SWS is in the domain `Forestry`, data set `forestry_prod_trade_agg_diss`. 
+
+
 ### **Fisheries**
 
 ### **Producer Prices**
