@@ -13,9 +13,16 @@ Although the process is simple and requires no human intervention, it is importa
 
 There are two functions designed to compute the QI, where each of them is responsible for a *quality dimension*. This implementation aims to produce indicators for _Accuracy_ and _Reliability_.
 
+### **getAccuracy**
+
 Below you find the workflow of the R function `getAccuracy`.
 
+```{r fig.align='center', echo=FALSE, out.width="100%", fig.cap='Workflow of the function getAccuracy'}
+knitr::include_graphics('images/getAccuracy.png', dpi = NA)
+```
 
+
+### **getReliability**
 
 Below you find the workflow of the R function `getReliability`.
 
