@@ -353,3 +353,25 @@ knitr::kable(d,
   kable_styling(fixed_thead = T) 
   
 ```
+
+## QI Dimensions {-}
+
+- **Datatable:** `QI Dimensions`
+- **Domain:** Quality Indicators
+- **Usage:** A data table with the type of code list for each data set. It is used in the shiny app.
+
+```{r qiDimensions, echo=FALSE, message=FALSE}
+require(data.table)
+require(kableExtra)
+d = data.table::fread("tables/qi_dimensions.csv")
+knitr::kable(d, 
+             align = 'l',
+             # escape = T, 
+             # format = "html",
+             # table.attr='class="table-fixed-header"',
+             caption = "Columns description of the data table: QI Dimensions") %>%
+  row_spec(0, background = "#5191c8") %>% 
+  kableExtra::kable_styling(font_size = 14) %>% 
+  kable_styling(fixed_thead = T) 
+  
+```

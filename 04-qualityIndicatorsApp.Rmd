@@ -1,1 +1,9 @@
 # **Shiny App** {#qualityIndicatorsApp}
+
+According to RStudio _"Shiny is an open source R package that provides an elegant and powerful web framework for building web applications using R. Shiny helps you turn your analyses into interactive web applications ..."_. Within this spirit the [*Quality Indicators App*](http://hqlprsws1.hq.un.fao.org:3838/qualityIndicatorsApp/) was developed aiming to ease the analysis of the QI for the statsitical processes produced and disseminated by FAO. Moreover, it was intended to be an _easy-to-use_ tool for producing and presenting reports at international conferences.
+The _app_ consumes data from the [Production Environment](https://sws.fao.org/) of the SWS, domain **Quality Indicators** and contains the following tabs:
+
+
+- **Create Report** - within this tab you can draw on-the-fly charts and generate automatic pdf reports based on the selection parameters (dataset, area, element, item and year);
+
+- **Stats** - you can analyse the data distribution of a particular dataset-element-item-quality indicator-year.

@@ -1,0 +1,8 @@
+Field,Description
+Dataset Name,Dataset name in the dissemination platform
+Dataset Name QI,The name of the dataset in the domain Quality Indicators
+Dataset ID QI,The id of the dataset in the domain Quality Indicators
+Area,Codelist of area
+Element,Codelist of element
+Item,Codelist of item
+Year,Codelist of item
