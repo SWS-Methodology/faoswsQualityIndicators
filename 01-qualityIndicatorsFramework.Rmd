@@ -7,7 +7,7 @@ The workflow of the QI module is shown below. As mentioned above, it starts when
 It is important to highlight that each technical unit is responsible for its own data in the domain **Disseminated Datasets**, which means that the technical unit is the only one who is able to populate/modify its own data.
 
 ```{r fig.align='center', echo=FALSE, fig.cap='Overall Workflow of the Quality Indicators module in the SWS'}
-knitr::include_graphics('images/workflow_plugin_qi.png', dpi = NA)
+knitr::include_graphics('images/overall_workflow_QI.png', dpi = NA)
 ```
 
 
