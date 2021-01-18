@@ -2,7 +2,7 @@
 
 This chapter describes the QI to be calculated in the SWS. These indicators have been proposed by OCS and endorsed by the IDWG. Nevertheless, for a better description and information regarding the indicators below, please read the following documents.
 
-- the [Statistical Standard Series - Quality Indicators to Be Disseminated to External Users](http://intranet.fao.org/fileadmin/user_upload/scp/SSS_Quality_Indicators__rev20201201_.pdf) 
+- the [Statistical Standard Series - Quality Indicators for External Users](http://intranet.fao.org/fileadmin/user_upload/scp/SSS_Quality_Indicators__rev20201201_.pdf) 
 - the [Quality Indicators - FAO ESS review for questionnaire-based FAOSTAT domains](documentation/Quality_indicators_DRAFT_v20190628 (003).docx), which contains the ready-to-use quality indicators, based on the first document.
 
 The indicators can ne split in the eight dimensions:
