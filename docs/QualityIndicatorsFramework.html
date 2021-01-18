@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 1 Quality Indicators Framework | Quality Indicators in the SWS</title>
   <meta name="description" content="The online book describes steps towards the implementation of the Quality Indicators of the various FAO processes into the Corporate Statistical Working System (SWS)" />
-  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 1 Quality Indicators Framework | Quality Indicators in the SWS" />
   <meta property="og:type" content="book" />
@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2020-09-01" />
+<meta name="date" content="2021-01-18" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -49,7 +49,13 @@
 
 
 
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<link href="libs/bsTable-3.3.7/bootstrapTable.min.css" rel="stylesheet" />
+<script src="libs/bsTable-3.3.7/bootstrapTable.js"></script>
 
 
 
@@ -138,7 +144,7 @@
             <section class="normal" id="section-">
 <div id="QualityIndicatorsFramework" class="section level1">
 <h1><span class="header-section-number">Chapter 1</span> <strong>Quality Indicators Framework</strong></h1>
-<p>The Quality Indicators (QI) module is meant to take place right after a statsitical process has been validated. This means that a technical unit has already finalized its entire data processing (<strong>questionnaire dispatch <span class="math inline">\(\Rightarrow\)</span> data collection <span class="math inline">\(\Rightarrow\)</span> data entry <span class="math inline">\(\Rightarrow\)</span> data cleaning <span class="math inline">\(\Rightarrow\)</span> imputation <span class="math inline">\(\Rightarrow\)</span> validation</strong>) and it is ready to release the data. Thus, the <em>officer in charge</em> can analyse the quality of the data before disseminating and may return to any step of the process if he/she deems necessary.</p>
+<p>The Quality Indicators (QI) module is meant to take place right after a statistical process has been validated. This means that a technical unit has already finalized its entire data processing (<strong>questionnaire dispatch <span class="math inline">\(\Rightarrow\)</span> data collection <span class="math inline">\(\Rightarrow\)</span> data entry <span class="math inline">\(\Rightarrow\)</span> data cleaning <span class="math inline">\(\Rightarrow\)</span> imputation <span class="math inline">\(\Rightarrow\)</span> validation</strong>) and it is ready to release the data. Thus, the <em>officer in charge</em> can analyse the quality of the data before disseminating and may return to any step of the process if he/she deems necessary.</p>
 <p>The workflow of the QI module is shown below. As mentioned above, it starts when the data is ready to be released. In the SWS context, this means that the technical unit can <em>tag</em> its data set and materialize it in the SWS domain <strong>Disseminated Datasets</strong>. Therefore, the <strong>faoswsQualityIndicators</strong> module can compile the indicators and save them in a dedicated dataset in the domain <strong>Quality Indicators</strong>. In this way, the <em>officer in charge</em> can find the results either in the SWS or in the <em>Shiny App</em>.</p>
 <p>It is important to highlight that each technical unit is responsible for its own data in the domain <strong>Disseminated Datasets</strong>, which means that the technical unit is the only one who is able to populate/modify its own data.</p>
 <div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-3"></span>
