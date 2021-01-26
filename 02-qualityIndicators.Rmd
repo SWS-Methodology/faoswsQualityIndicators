@@ -26,6 +26,72 @@ Below you find the indicators implemented in the SWS.
 
 ### Questionnaire reporting rate
 
+\begin{equation} 
+  QRR = \frac{Q_R}{Q} \times 100
+\end{equation} 
+
+Where $Q_R$ is the number of returned questionnaires completely or partially filled with valid information (a questionnaire partially filled whose information is not used for calculation of the final statistical outputs because not relevant or because being of poor quality should be counted as a non-response) and $Q$ is the number of dispatched questionnaires.
+
+### Percentage of missing data points
+
+\begin{equation} 
+  PM = \frac{n_{Missing}}{n_{Relevant}} \times 100
+\end{equation} 
+
+$100-PM$ returns the percentage of available data points.
+
+
+### Percentage of official data points
+
+\begin{equation} 
+  RO = \frac{n_{Official}}{n_{Available}} \times 100
+\end{equation} 
+
+
+### Percentage of imputed data points
+
+\begin{equation} 
+  RI = \frac{n_{Imputed}}{n_{Available}} \times 100
+\end{equation} 
+
+### Percentage of mirror data points
+
+\begin{equation} 
+  RM = \frac{n_{Mirror}}{n_{Available}} \times 100
+\end{equation} 
+
+### Contribution of imputed values to the final aggregate
+
+\begin{equation} 
+  CIVT = \frac{\sum_{j=1}^{n_I} y_{Ij} + \sum_{j=1}^{n_F} y_{Fj}}{\sum_{j=1}^{n_{available}} y_{.j}} \times 100
+\end{equation} 
+
+
+In practice, the denominator, $\hat t_y = \sum_{j=1}^{n_{available}} y_{.j}$ is the estimated total of the variable Y (at the “World” or regional level) that is disseminated externally and the numerator is the sum of the values that are obtained through imputation (flags “I” and “F”).
+
+
+### Contribution of official values to the final aggregate
+
+\begin{equation} 
+  COVT = \frac{\sum_{j=1}^{n_{official}} y_{official}}{\sum_{j=1}^{n_{available}} y_{.j}} \times 100
+\end{equation} 
+
+
+### Contribution of questionnaire values to the final aggregate
+
+\begin{equation} 
+  CQVT = \frac{\sum_{j=1}^{n_{quest}} y_{quest}}{\sum_{j=1}^{n_{available}} y_{.j}} \times 100
+\end{equation} 
+
+
+### Contribution of mirror values to the final aggregate
+
+\begin{equation} 
+  CMVT = \frac{\sum_{j=1}^{n_{mirror}} y_{mirror}}{\sum_{j=1}^{n_{available}} y_{.j}} \times 100
+\end{equation} 
+
+
+
 ## Reliability
 
 As stated by the [Statistical Standard Series](http://intranet.fao.org/fileadmin/user_upload/scp/SSS_Quality_Indicators__rev20201201_.pdf), reliability *"indicates how close the initial estimates are to the subsequent or final estimates."*.
