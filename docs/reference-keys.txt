@@ -44,3 +44,4 @@ qualityIndicatorsApp
 sws-resources
 code-lists
 datatables
+questionnaire-reporting-rate

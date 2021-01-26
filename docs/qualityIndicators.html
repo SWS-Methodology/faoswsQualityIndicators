@@ -52,10 +52,6 @@
 <script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
-<script src="libs/kePrint-0.0.1/kePrint.js"></script>
-<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
-<link href="libs/bsTable-3.3.7/bootstrapTable.min.css" rel="stylesheet" />
-<script src="libs/bsTable-3.3.7/bootstrapTable.js"></script>
 
 
 
@@ -72,11 +68,10 @@
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="index.html#welcome"><strong>Welcome</strong></a></li>
-<li><a href="preface.html#preface"><strong>Preface</strong></a><ul>
-<li><a href="preface.html#how-to-use-this-book"><strong>How to use this book</strong></a></li>
-<li><a href="preface.html#why-to-use-the-sws"><strong>Why to use the SWS</strong></a></li>
-<li><a href="preface.html#migration-actors"><strong>Migration actors</strong></a></li>
+<li><a href="index.html#welcome"><strong>Welcome</strong></a><ul>
+<li><a href="index.html#how-to-use-this-book"><strong>How to use this book</strong></a></li>
+<li><a href="index.html#why-to-use-the-sws"><strong>Why to use the SWS</strong></a></li>
+<li><a href="index.html#migration-actors"><strong>Migration actors</strong></a></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="QualityIndicatorsFramework.html"><a href="QualityIndicatorsFramework.html"><i class="fa fa-check"></i><b>1</b> <strong>Quality Indicators Framework</strong></a><ul>
 <li class="chapter" data-level="1.1" data-path="QualityIndicatorsFramework.html"><a href="QualityIndicatorsFramework.html#build-up-historical-data-disseminated-in-the-sws"><i class="fa fa-check"></i><b>1.1</b> <strong>Build up historical data disseminated in the SWS</strong></a></li>
@@ -94,7 +89,9 @@
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="qualityIndicators.html"><a href="qualityIndicators.html"><i class="fa fa-check"></i><b>2</b> <strong>Quality Indicators</strong></a><ul>
-<li class="chapter" data-level="2.1" data-path="qualityIndicators.html"><a href="qualityIndicators.html#accuracy"><i class="fa fa-check"></i><b>2.1</b> Accuracy</a></li>
+<li class="chapter" data-level="2.1" data-path="qualityIndicators.html"><a href="qualityIndicators.html#accuracy"><i class="fa fa-check"></i><b>2.1</b> Accuracy</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="qualityIndicators.html"><a href="qualityIndicators.html#questionnaire-reporting-rate"><i class="fa fa-check"></i><b>2.1.1</b> Questionnaire reporting rate</a></li>
+</ul></li>
 <li class="chapter" data-level="2.2" data-path="qualityIndicators.html"><a href="qualityIndicators.html#reliability"><i class="fa fa-check"></i><b>2.2</b> Reliability</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="faoswsQualityIndicators.html"><a href="faoswsQualityIndicators.html"><i class="fa fa-check"></i><b>3</b> <strong>faoswsQualityIndicators</strong></a><ul>
@@ -149,7 +146,7 @@
 <li>the <a href="http://intranet.fao.org/fileadmin/user_upload/scp/SSS_Quality_Indicators__rev20201201_.pdf">Statistical Standard Series - Quality Indicators for External Users</a></li>
 <li>the <a href="documentation/Quality_indicators_DRAFT_v20190628%20(003).docx">Quality Indicators - FAO ESS review for questionnaire-based FAOSTAT domains</a>, which contains the ready-to-use quality indicators, based on the first document.</li>
 </ul>
-<p>The indicators can ne split in the eight dimensions:</p>
+<p>The indicators can be split in the following dimensions:</p>
 <ul>
 <li>Relevance</li>
 <li>Accuracy</li>
@@ -160,9 +157,14 @@
 <li>Comparability</li>
 <li>Accessibility</li>
 </ul>
-<p>We will focus on the description and implementation of two dimensions: <strong>Accuracy</strong> and <strong>Reliability</strong>. Although all quality dimensions are very important and should be taken into account to measure the quality of a statistical output, accuracy and reliability are the only ones that can be measured with the disseminated data. The remain ones are feasible to measure once the technical units provides us with information regarding their calendars/deadlines.</p>
+<p>We will focus on the description and implementation of two dimensions: <strong>Accuracy</strong> and <strong>Reliability</strong>. Although all quality dimensions are very important and should be taken into account in order to measure the quality of a statistical output, accuracy and reliability are the only ones that can be measured with the disseminated data. The remain ones are feasible to measure once the technical units provide us with information regarding their calendars/deadlines.</p>
 <div id="accuracy" class="section level2">
 <h2><span class="header-section-number">2.1</span> Accuracy</h2>
+<p>According to the Statistical Standard Series, accuracy is <em>“the closeness of an estimate to the true value of what is measured. In this case, we are not interested in the accuracy of the incoming country data, but rather in assessing solely FAO’s contribution to the overall accuracy of the final statistical outputs calculated and disseminated by FAO (usually regional or global aggregates).”</em></p>
+<p>Below you find the indicators implemented in the SWS.</p>
+<div id="questionnaire-reporting-rate" class="section level3">
+<h3><span class="header-section-number">2.1.1</span> Questionnaire reporting rate</h3>
+</div>
 </div>
 <div id="reliability" class="section level2">
 <h2><span class="header-section-number">2.2</span> Reliability</h2>
@@ -225,20 +227,6 @@ gitbook.start({
 });
 </script>
 
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:")
-      if (/^https?:/.test(src))
-        src = src.replace(/^https?:/, '');
-    script.src = src;
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
 </body>
 
 </html>

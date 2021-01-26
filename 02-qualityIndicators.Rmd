@@ -5,7 +5,7 @@ This chapter describes the QI to be calculated in the SWS. These indicators have
 - the [Statistical Standard Series - Quality Indicators for External Users](http://intranet.fao.org/fileadmin/user_upload/scp/SSS_Quality_Indicators__rev20201201_.pdf) 
 - the [Quality Indicators - FAO ESS review for questionnaire-based FAOSTAT domains](documentation/Quality_indicators_DRAFT_v20190628 (003).docx), which contains the ready-to-use quality indicators, based on the first document.
 
-The indicators can ne split in the eight dimensions:
+The indicators can be split in the following dimensions:
 
 - Relevance
 - Accuracy
@@ -16,10 +16,19 @@ The indicators can ne split in the eight dimensions:
 - Comparability
 - Accessibility
 
-We will focus on the description and implementation of two dimensions: **Accuracy** and **Reliability**. Although all quality dimensions are very important and should be taken into account to measure the quality of a statistical output, accuracy and reliability are the only ones that can be measured with the disseminated data. The remain ones are feasible to measure once the technical units provides us with information regarding their calendars/deadlines.
+We will focus on the description and implementation of two dimensions: **Accuracy** and **Reliability**. Although all quality dimensions are very important and should be taken into account in order to measure the quality of a statistical output, accuracy and reliability are the only ones that can be measured with the disseminated data. The remain ones are feasible to measure once the technical units provide us with information regarding their calendars/deadlines.
 
 ## Accuracy
 
+According to the [Statistical Standard Series](http://intranet.fao.org/fileadmin/user_upload/scp/SSS_Quality_Indicators__rev20201201_.pdf), accuracy is *"the closeness of an estimate to the true value of what is measured. In this case, we are not interested in the accuracy of the incoming country data, but rather in assessing solely FAO’s contribution to the overall accuracy of the final statistical outputs calculated and disseminated by FAO (usually regional or global aggregates)."*
+
+Below you find the indicators implemented in the SWS.
+
+### Questionnaire reporting rate
+
 ## Reliability
 
+As stated by the [Statistical Standard Series](http://intranet.fao.org/fileadmin/user_upload/scp/SSS_Quality_Indicators__rev20201201_.pdf), reliability *"indicates how close the initial estimates are to the subsequent or final estimates."*.
+
+The revision indicators are presented hereinafter.
 
