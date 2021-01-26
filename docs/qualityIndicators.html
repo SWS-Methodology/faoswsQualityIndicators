@@ -100,7 +100,11 @@
 <li class="chapter" data-level="2.1.8" data-path="qualityIndicators.html"><a href="qualityIndicators.html#contribution-of-questionnaire-values-to-the-final-aggregate"><i class="fa fa-check"></i><b>2.1.8</b> Contribution of questionnaire values to the final aggregate</a></li>
 <li class="chapter" data-level="2.1.9" data-path="qualityIndicators.html"><a href="qualityIndicators.html#contribution-of-mirror-values-to-the-final-aggregate"><i class="fa fa-check"></i><b>2.1.9</b> Contribution of mirror values to the final aggregate</a></li>
 </ul></li>
-<li class="chapter" data-level="2.2" data-path="qualityIndicators.html"><a href="qualityIndicators.html#reliability"><i class="fa fa-check"></i><b>2.2</b> Reliability</a></li>
+<li class="chapter" data-level="2.2" data-path="qualityIndicators.html"><a href="qualityIndicators.html#reliability"><i class="fa fa-check"></i><b>2.2</b> Reliability</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="qualityIndicators.html"><a href="qualityIndicators.html#mean-revision"><i class="fa fa-check"></i><b>2.2.1</b> Mean Revision</a></li>
+<li class="chapter" data-level="2.2.2" data-path="qualityIndicators.html"><a href="qualityIndicators.html#mean-absolute-revision"><i class="fa fa-check"></i><b>2.2.2</b> Mean Absolute Revision</a></li>
+<li class="chapter" data-level="2.2.3" data-path="qualityIndicators.html"><a href="qualityIndicators.html#relative-mean-absolute-revision"><i class="fa fa-check"></i><b>2.2.3</b> Relative Mean Absolute Revision</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="faoswsQualityIndicators.html"><a href="faoswsQualityIndicators.html"><i class="fa fa-check"></i><b>3</b> <strong>faoswsQualityIndicators</strong></a><ul>
 <li class="chapter" data-level="3.1" data-path="faoswsQualityIndicators.html"><a href="faoswsQualityIndicators.html#quality-indicators---r-functions"><i class="fa fa-check"></i><b>3.1</b> <strong>Quality Indicators - R functions</strong></a><ul>
@@ -232,7 +236,30 @@
 <h2><span class="header-section-number">2.2</span> Reliability</h2>
 <p>As stated by the <a href="http://intranet.fao.org/fileadmin/user_upload/scp/SSS_Quality_Indicators__rev20201201_.pdf">Statistical Standard Series</a>, reliability <em>“indicates how close the initial estimates are to the subsequent or final estimates.”</em>.</p>
 <p>The revision indicators are presented hereinafter.</p>
+<div id="mean-revision" class="section level3">
+<h3><span class="header-section-number">2.2.1</span> Mean Revision</h3>
+<p>The Mean Revision is an average of the differences between the latest and the previous disseminated value over all terms of the time series:</p>
+<p><span class="math display">\[\begin{equation} 
+  MR = \frac{1}{(t_m - t_0 +1)} \sum_{t=t_0}^{t_m}(X_{Lt} - X_{Pt}) 
+\end{equation}\]</span></p>
+<p><span class="math inline">\(X_{Lt}\)</span>: latest available estimate of the aggregate (regional or “World” level) for the variable of interest at time t;</p>
+<p><span class="math inline">\(X_{Pt}\)</span>: previous available estimate of the aggregate (regional or “World” level) for the variable of interest at time t;</p>
+<p><span class="math inline">\(t_0\)</span>: starting year in the time series: the starting year should not be a year before a break in the time series;</p>
+<p><span class="math inline">\(t_m\)</span>: last year in the time series.</p>
+</div>
+<div id="mean-absolute-revision" class="section level3">
+<h3><span class="header-section-number">2.2.2</span> Mean Absolute Revision</h3>
+<p><span class="math display">\[\begin{equation} 
+  MAR = \frac{1}{(t_m - t_0 +1)} \sum_{t=t_0}^{t_m}|X_{Lt} - X_{Pt}|
+\end{equation}\]</span></p>
+</div>
+<div id="relative-mean-absolute-revision" class="section level3">
+<h3><span class="header-section-number">2.2.3</span> Relative Mean Absolute Revision</h3>
+<p><span class="math display">\[\begin{equation} 
+  RMAR_L = \frac{\sum_{t=t_0}^{t_m}|X_{Lt} - X_{Pt}|}{\sum_{t=t_0}^{t_m}X_{Lt}}
+\end{equation}\]</span></p>
 
+</div>
 </div>
 </div>
             </section>

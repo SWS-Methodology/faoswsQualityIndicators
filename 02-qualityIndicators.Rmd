@@ -98,3 +98,33 @@ As stated by the [Statistical Standard Series](http://intranet.fao.org/fileadmin
 
 The revision indicators are presented hereinafter.
 
+### Mean Revision
+
+The Mean Revision is an average of the differences between the latest and the previous disseminated value over all terms of the time series:
+
+\begin{equation} 
+  MR = \frac{1}{(t_m - t_0 +1)} \sum_{t=t_0}^{t_m}(X_{Lt} - X_{Pt}) 
+\end{equation} 
+
+$X_{Lt}$: latest available estimate of the aggregate (regional or “World” level) for the variable of interest at time t;
+
+$X_{Pt}$: previous available estimate of the aggregate (regional or “World” level) for the variable of interest at time t;
+
+$t_0$: starting year in the time series: the starting year should not be a year before a break in the time series;
+
+$t_m$: last year in the time series.
+
+### Mean Absolute Revision
+
+
+\begin{equation} 
+  MAR = \frac{1}{(t_m - t_0 +1)} \sum_{t=t_0}^{t_m}|X_{Lt} - X_{Pt}|
+\end{equation} 
+
+
+### Relative Mean Absolute Revision
+
+
+\begin{equation} 
+  RMAR_L = \frac{\sum_{t=t_0}^{t_m}|X_{Lt} - X_{Pt}|}{\sum_{t=t_0}^{t_m}X_{Lt}}
+\end{equation} 
