@@ -6,7 +6,7 @@ The workflow of the QI module is shown below. As mentioned above, it starts when
 
 It is important to highlight that each technical unit is responsible for its own data in the domain **Disseminated Datasets**, which means that the technical unit is the only one who is able to populate/modify its own data.
 
-```{r fig.align='center', echo=FALSE, fig.cap='Overall Workflow of the Quality Indicators module in the SWS'}
+```{r qiWorkFlow, fig.align='center', echo=FALSE, fig.cap='Overall Workflow of the Quality Indicators module in the SWS'}
 knitr::include_graphics('images/overall_workflow_QI.png', dpi = NA)
 ```
 
@@ -78,3 +78,17 @@ FAO is responsible for the dissemination of several statistical outputs includin
 ### **Pesticides Trade**
 
 [*Pesticides Trade*](http://www.fao.org/faostat/en/#data/RT) are disseminated in **FAOSTAT** under **Inputs**. The _Eco Team_ responsible for this output has already created a dedicated dissemination data set called **Pesticides Trade (dissemination)** in the SWS to storage the data. Therefore, there was a need to make a _copy_ of it into the domain _Disseminated Datasets_.
+
+## Create and Transfer tags
+
+The tagged data plays a role in the Quality Indicators workflow. Meant to be created in the dissemination phase, when the data cycle has completed, the tags (or tagged data) are accessed through an API to be later published in a dissemination platform (e.g. [FAOSTAT](http://www.fao.org/faostat/en/#home)).
+
+As per Figure \@ref(fig:qiWorkFlow), once the tag is created, it must be transferred to the domain **Disseminated Datasets**, as it will be used as the _input data_ for the quality indicators plugin.
+
+It is worth highlighting to the technical units that the quality indicators have as **input data** the data set stored in the domain **Disseminated Datasets** rather than the working data. Therefore, the tag creation and its transfer to the **Disseminated Datasets** are the first steps in order to calculate the quality indicators.
+
+The example below shows how to:
+
+- tag your data set;
+- transfer tag to domain **Disseminated Datasets**.
+
