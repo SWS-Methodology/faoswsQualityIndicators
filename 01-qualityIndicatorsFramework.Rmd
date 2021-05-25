@@ -96,10 +96,9 @@ The example below shows how to:
 knitr::include_url("https://www.youtube.com/embed/kyFtd5XVMu8")
 ```
 
-
 - transfer tag to domain **Disseminated Datasets**: once the tag is created, you can transfer it as shown below.
 
 ```{r, fig.align='center', echo=FALSE}
-knitr::include_url("http://www.youtube.com/embed/hWETcUIUxvc")
+knitr::include_url("https://www.youtube.com/embed/hWETcUIUxvc")
 ```
 
