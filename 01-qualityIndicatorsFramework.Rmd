@@ -90,15 +90,15 @@ As per Figure \@ref(fig:qiWorkFlow), once the tag is created, it must be transfe
 
 The example below shows how to:
 
-- tag your data set;
+- tag your data set: as you can see in the video below, you don't need to create a session in order to tag the data. This example is with the domain `Forestry`, data set `forestry_prod_trade_agg`.
 
 ```{r, fig.align='center', echo=FALSE}
-knitr::include_url("https://www.youtube.com/watch?v=zNzZ1PfUDNk")
+knitr::include_url("https://www.youtube.com/embed/kyFtd5XVMu8")
 ```
 
-- transfer tag to domain **Disseminated Datasets**.
+- transfer tag to domain **Disseminated Datasets**: once the tag is created, you can transfer it as shown below.
 
 ```{r, fig.align='center', echo=FALSE}
-knitr::include_url("https://www.youtube.com/watch?v=hWETcUIUxvc")
+knitr::include_url("http://www.youtube.com/embed/hWETcUIUxvc")
 ```
 
