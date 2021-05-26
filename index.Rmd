@@ -14,7 +14,7 @@ description: "The online book describes steps towards the implementation of the 
 
 # **Welcome** {-}
 
-Produce and disseminate high quality statistics is paramount to delve deeper into agriculture and food issues and FAO has proposed a set of indicators to measure quality in different types of dimensions: relevance, accuracy and reliability, timeliness and punctuality, coherence and comparability, accessibility and clarity. This book describes the entire implementation of the Quality Indicators in the Statistical Working System (SWS) applied to the several statistical processes - Agriculture Production and Trade, Fertilizers, Producer Prices, Forestry Production and Trade, Fisheries and AQUASTAT.
+Producing and disseminating high quality statistics are paramount for delving deeper into agriculture and food issues and FAO has proposed a set of indicators to measure quality in different types of dimensions: relevance, accuracy and reliability, timeliness and punctuality, coherence and comparability, accessibility and clarity. This book describes the entire implementation of the Quality Indicators in the Statistical Working System (SWS) applied to the several statistical processes - Agriculture Production and Trade, Fertilizers, Pesticides, Land Use, Forestry Production and Trade, Producer Prices and Fisheries.
 
 ```{block , type='rmdnote'}
 **IMPORTANT:**
