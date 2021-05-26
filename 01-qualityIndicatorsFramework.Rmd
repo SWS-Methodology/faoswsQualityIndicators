@@ -55,12 +55,12 @@ FAO is responsible for the dissemination of several statistical outputs includin
 
 ### **Fertilizers by Nutrient**
 
-[*Fertilizers by Nutrient*](http://www.fao.org/faostat/en/#data/RFN) are disseminated in **FAOSTAT** under **Inputs**. The _Eco Team_ responsible for this output has already created a dedicated dissemination data set called **Fertilizers (dissemination)** in the SWS to storage the data. Therefore, there was a need to make a _copy_ of it into the domain _Disseminated Datasets_.
+[*Fertilizers by Nutrient*](http://www.fao.org/faostat/en/#data/RFN) are disseminated in **FAOSTAT** under **Inputs**. The _Environment Team_ responsible for this output has already created a dedicated dissemination data set called **Fertilizers (dissemination)** in the SWS to store the data. Therefore, there was a need to make a _copy_ of it into the domain _Disseminated Datasets_.
 
 
 ### **Fertilizers by Product**
 
-[*Fertilizers by Product*](http://www.fao.org/faostat/en/#data/RFB) are disseminated in **FAOSTAT** under **Inputs**. The _Eco Team_ responsible for this output has already created a dedicated dissemination data set called **Fertilizers (dissemination)** in the SWS to storage the data. Therefore, there was a need to make a _copy_ of it into the domain _Disseminated Datasets_.
+[*Fertilizers by Product*](http://www.fao.org/faostat/en/#data/RFB) are disseminated in **FAOSTAT** under **Inputs**. The _Environment Team_ responsible for this output has already created a dedicated dissemination data set called **Fertilizers (dissemination)** in the SWS to store the data. Therefore, there was a need to make a _copy_ of it into the domain _Disseminated Datasets_.
 
 ### **Forestry Production and Trade**
 
@@ -73,11 +73,15 @@ FAO is responsible for the dissemination of several statistical outputs includin
 
 ### **Pesticides Use**
 
-[*Pesticides Use*](http://www.fao.org/faostat/en/#data/RP) are disseminated in **FAOSTAT** under **Inputs**. The _Eco Team_ responsible for this output has already created a dedicated dissemination data set called **Pesticides Use (dissemination)** in the SWS to storage the data. Therefore, there was a need to make a _copy_ of it into the domain _Disseminated Datasets_.
+[*Pesticides Use*](http://www.fao.org/faostat/en/#data/RP) are disseminated in **FAOSTAT** under **Inputs**. The _Environment Team_ responsible for this output has already created a dedicated dissemination data set called **Pesticides Use (dissemination)** in the SWS to store the data. Therefore, there was a need to make a _copy_ of it into the domain _Disseminated Datasets_.
 
 ### **Pesticides Trade**
 
-[*Pesticides Trade*](http://www.fao.org/faostat/en/#data/RT) are disseminated in **FAOSTAT** under **Inputs**. The _Eco Team_ responsible for this output has already created a dedicated dissemination data set called **Pesticides Trade (dissemination)** in the SWS to storage the data. Therefore, there was a need to make a _copy_ of it into the domain _Disseminated Datasets_.
+[*Pesticides Trade*](http://www.fao.org/faostat/en/#data/RT) are disseminated in **FAOSTAT** under **Inputs**. The _Environment Team_ responsible for this output has already created a dedicated dissemination data set called **Pesticides Trade (dissemination)** in the SWS to store the data. Therefore, there was a need to make a _copy_ of it into the domain _Disseminated Datasets_.
+
+### **Land Use**
+
+[*Land Use*](http://www.fao.org/faostat/en/#data/RL) are disseminated in **FAOSTAT** under **Inputs**. The _Environment Team_ responsible for this output has already created a dedicated dissemination data set called **Land Use (dissemination)** in the SWS to store the data. Therefore, there was a need to make a _copy_ of it into the domain _Disseminated Datasets_.
 
 ## **Create and Transfer tags**
 
