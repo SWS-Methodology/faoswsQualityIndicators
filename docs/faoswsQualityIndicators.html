@@ -122,8 +122,8 @@
 <li class="chapter" data-level="3.1.1" data-path="faoswsQualityIndicators.html"><a href="faoswsQualityIndicators.html#getaccuracy"><i class="fa fa-check"></i><b>3.1.1</b> <strong>getAccuracy</strong></a></li>
 <li class="chapter" data-level="3.1.2" data-path="faoswsQualityIndicators.html"><a href="faoswsQualityIndicators.html#getreliability"><i class="fa fa-check"></i><b>3.1.2</b> <strong>getReliability</strong></a></li>
 </ul></li>
-<li class="chapter" data-level="3.2" data-path="faoswsQualityIndicators.html"><a href="faoswsQualityIndicators.html#data-processing"><i class="fa fa-check"></i><b>3.2</b> <strong>Data Processing</strong></a></li>
-<li class="chapter" data-level="3.3" data-path="faoswsQualityIndicators.html"><a href="faoswsQualityIndicators.html#aggregates"><i class="fa fa-check"></i><b>3.3</b> <strong>Aggregates</strong></a></li>
+<li class="chapter" data-level="3.2" data-path="faoswsQualityIndicators.html"><a href="faoswsQualityIndicators.html#aggregates"><i class="fa fa-check"></i><b>3.2</b> <strong>Aggregates</strong></a></li>
+<li class="chapter" data-level="3.3" data-path="faoswsQualityIndicators.html"><a href="faoswsQualityIndicators.html#running-the-module"><i class="fa fa-check"></i><b>3.3</b> <strong>Running the module</strong></a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="qualityIndicatorsApp.html"><a href="qualityIndicatorsApp.html"><i class="fa fa-check"></i><b>4</b> <strong>Shiny App</strong></a></li>
 <li class="chapter" data-level="" data-path="appendix-appendix.html"><a href="appendix-appendix.html"><i class="fa fa-check"></i>(APPENDIX) Appendix</a></li>
@@ -200,11 +200,43 @@ Figure 5: Workflow of the function getReliability
 <p><mark>It’s important to highlight that the reliability indicators can be calculated only if there are historical data.</mark></p>
 </div>
 </div>
-<div id="data-processing" class="section level2" number="3.2">
-<h2 number="3.2"><span class="header-section-number">3.2</span> <strong>Data Processing</strong></h2>
+<div id="aggregates" class="section level2" number="3.2">
+<h2 number="3.2"><span class="header-section-number">3.2</span> <strong>Aggregates</strong></h2>
+<p>The plugin calculates QI for each element-year at the following levels:</p>
+<ul>
+<li>area and item group;</li>
+<li>area group and item;</li>
+<li>area group and item group.</li>
+</ul>
+<p>Thus, the aggregates play a role in the QI. They are the auxiliary data, located in the SWS-Datatables. They are the same aggregates published in the dissemination platform.</p>
+<p>Each data set disseminated has got its own table in the SWS-Datatables with its respective aggregate composition of area and item. Therefore, <mark>the technical unit must validate these datatables to ensure the plugin is consuming the correct and up-to-date table.</mark> You find the list of all datatables with their column description in <a href="sws-resources.html#datatables">Datatables</a>.</p>
 </div>
-<div id="aggregates" class="section level2" number="3.3">
-<h2 number="3.3"><span class="header-section-number">3.3</span> <strong>Aggregates</strong></h2>
+<div id="running-the-module" class="section level2" number="3.3">
+<h2 number="3.3"><span class="header-section-number">3.3</span> <strong>Running the module</strong></h2>
+<ol style="list-style-type: decimal">
+<li><p>Log in the SWS;</p></li>
+<li><p>Click on <strong>New Query</strong>;</p></li>
+<li><p>Select <strong>Quality Indicators</strong> and your respective data set. In this example, we choose <strong>Crops Production QI</strong>;</p></li>
+<li><p>Select whatever geographicAreaM49, measuredElement, measuredItemCPC and timePointYears. After that, run the query. Otherwise, you can take advantage that the <code>faoswsQualityIndicators</code> is a core plugin (not necessary to create a session to launch it) and just click on the top-right <strong>Run plugin</strong>.;
+<br></p>
+<div class="figure" style="text-align: center"><span id="fig:qiPlugin"></span>
+<img src="images/qi_crops_run_plugin.PNG" alt="Steps 1 to 4" width="100%" />
+<p class="caption">
+Figure 6: Steps 1 to 4
+</p>
+</div>
+<p><br></p></li>
+<li><p>Select the <strong>faoswsQualityIndicators</strong> module, choose the <em>parameter</em> (Year) and click on <strong>Run plugin</strong>;</p></li>
+</ol>
+<br>
+<div class="figure" style="text-align: center"><span id="fig:qiPluginParam"></span>
+<img src="images/qi_crops_select_parameter.png" alt="Select the faoswsQualityIndicators plugin and run it" width="100%" />
+<p class="caption">
+Figure 7: Select the faoswsQualityIndicators plugin and run it
+</p>
+</div>
+<p><br></p>
+<p>As it is a core plugin, the data will be directly saved in the Database and an email will be sent to the user when it is complete.</p>
 
 </div>
 </div>

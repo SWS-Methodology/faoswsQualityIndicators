@@ -32,6 +32,41 @@ knitr::include_graphics('images/getReliability.png', dpi = NA)
 
 <mark>It's important to highlight that the reliability indicators can be calculated only if there are historical data.</mark>
 
-## **Data Processing**
-
 ## **Aggregates**
+
+The plugin calculates QI for each element-year at the following levels:
+
+- area and item group;
+- area group and item;
+- area group and item group.
+
+Thus, the aggregates play a role in the QI. They are the auxiliary data, located in the SWS-Datatables. They are the same aggregates published in the dissemination platform. 
+
+Each data set disseminated has got its own table in the SWS-Datatables with its respective aggregate composition of area and item. Therefore, <mark>the technical unit must validate these datatables to ensure the plugin is consuming the correct and up-to-date table.</mark> You find the list of all datatables with their column description in [Datatables]. 
+
+## **Running the module**
+
+1. Log in the SWS;
+
+2. Click on **New Query**;
+
+3. Select **Quality Indicators** and your respective data set. In this example, we choose **Crops Production QI**;
+
+4. Select whatever geographicAreaM49, measuredElement, measuredItemCPC and timePointYears. After that, run the query. Otherwise, you can take advantage that the `faoswsQualityIndicators` is a core plugin (not necessary to create a session to launch it) and just click on the top-right **Run plugin**.;
+<br>
+```{r qiPlugin,  echo=FALSE, out.width="100%",fig.align="center",  fig.cap='Steps 1 to 4'}
+knitr::include_graphics("images/qi_crops_run_plugin.PNG")
+```
+<br>
+
+5. Select the **faoswsQualityIndicators** module, choose the *parameter* (Year) and click on **Run plugin**;
+
+<br>
+```{r qiPluginParam,  echo=FALSE, out.width="100%", fig.align="center", fig.cap='Select the faoswsQualityIndicators plugin and run it'}
+knitr::include_graphics("images/qi_crops_select_parameter.png")
+```
+<br>
+
+As it is a core plugin, the data will be directly saved in the Database and an email will be sent to the user when it is complete.
+
+
