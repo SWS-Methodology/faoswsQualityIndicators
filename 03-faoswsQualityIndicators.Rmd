@@ -26,6 +26,11 @@ knitr::include_graphics('images/getAccuracy.png', dpi = NA)
 
 Below you find the workflow of the R function `getReliability`.
 
+```{r fig.align='center', echo=FALSE, out.width="100%", fig.cap='Workflow of the function getReliability'}
+knitr::include_graphics('images/getReliability.png', dpi = NA)
+```
+
+<mark>It's important to highlight that the reliability indicators can be calculated only if there are historical data.</mark>
 
 ## **Data Processing**
 

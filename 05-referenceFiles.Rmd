@@ -176,6 +176,7 @@ knitr::kable(d,
   
 ```
 
+
 ## Mapping Aggregate Groups - Forestry Production and Trade {-}
 
 - **Datatable:** `Mapping Aggregate Groups - Forestry Production and Trade`
@@ -197,6 +198,29 @@ knitr::kable(d,
   kable_styling(fixed_thead = T) 
   
 ```
+
+## Mapping Aggregate Groups - Fisheries {-}
+
+- **Datatable:** `Mapping Aggregate Groups - Fisheries`
+- **Domain:** Quality Indicators
+- **Usage:** A data table with the area and item groups of Fisheries.
+
+```{r mappingAggGroupsFisheries, echo=FALSE, message=FALSE}
+require(data.table)
+require(kableExtra)
+d = data.table::fread("tables/mapping_agg_groups_fisheries.csv")
+knitr::kable(d, 
+             align = 'l',
+             # escape = T, 
+             # format = "html",
+             # table.attr='class="table-fixed-header"',
+             caption = "Columns description of the data table: Mapping Aggregate Groups - Fisheries") %>%
+  row_spec(0, background = "#5191c8") %>% 
+  kableExtra::kable_styling(font_size = 14) %>% 
+  kable_styling(fixed_thead = T) 
+  
+```
+
 
 ## Mapping Aggregate Groups - Fertilizers Nutrient {-}
 
