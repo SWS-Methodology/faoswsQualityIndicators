@@ -67,12 +67,18 @@ FAO is responsible for the dissemination of several statistical outputs includin
 [*Forestry Production and Trade*](http://www.fao.org/faostat/en/#data/FO) are disseminated in **FAOSTAT** under **Forestry**. In order to calculate their QI, there was a need to build up the historical data disseminated as described in [**Build up historical data disseminated in the SWS**]. Its correspondent data set in the SWS is in the domain `Forestry`, data set `forestry_prod_trade_agg_diss`. 
 
 
-### **Fisheries and Aquaculture**
+### **Aquaculture Production**
 
-[*Fisheries and Aquaculture*](http://www.fao.org/fishery/statistics/software/fishstatj/en) are disseminated through the Windows and Mac application **FishStatJ**. The first data set to have quality indicators calculated for is **Aquaculture Production**.
+[*Aquaculture Production*](http://www.fao.org/fishery/statistics/software/fishstatj/en) are disseminated through the Windows and Mac application **FishStatJ**. In the domain _Disseminated Datasets_, its data set is **Aquaculture Production Disseminated**.
+
+
+### **Capture Production**
+
+[*Capture Production*](http://www.fao.org/fishery/statistics/software/fishstatj/en) are disseminated through the Windows and Mac application **FishStatJ**. In the domain _Disseminated Datasets_, its data set is **Capture Production Disseminated**.
 
 
 ### **Producer Prices**
+[*Producer Prices*](http://www.fao.org/faostat/en/#data/PP) are disseminated in **FAOSTAT** under **Prices**. The disseminated data set in the domain _Disseminated Datasets_ is **Annual Producer Prices (Validation) - Diss**.
 
 ### **Pesticides Use**
 
