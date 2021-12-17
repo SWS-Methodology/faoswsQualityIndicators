@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html >
-
+<html lang="" xml:lang="">
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Quality Indicators in the SWS</title>
-  <meta name="description" content="The online book describes steps towards the implementation of the Quality Indicators of the various FAO processes into the Corporate Statistical Working System (SWS)">
-  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+  <meta name="description" content="The online book describes steps towards the implementation of the Quality Indicators of the various FAO processes into the Corporate Statistical Working System (SWS)" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Quality Indicators in the SWS" />
   <meta property="og:type" content="book" />
   
-  <meta property="og:image" content="images/quality_indicators_cover_book.png" />
+  <meta property="og:image" content="/images/quality_indicators_cover_book.png" />
   <meta property="og:description" content="The online book describes steps towards the implementation of the Quality Indicators of the various FAO processes into the Corporate Statistical Working System (SWS)" />
   
 
@@ -20,26 +19,29 @@
   <meta name="twitter:title" content="Quality Indicators in the SWS" />
   
   <meta name="twitter:description" content="The online book describes steps towards the implementation of the Quality Indicators of the various FAO processes into the Corporate Statistical Working System (SWS)" />
-  <meta name="twitter:image" content="images/quality_indicators_cover_book.png" />
+  <meta name="twitter:image" content="/images/quality_indicators_cover_book.png" />
 
 
 
-<meta name="date" content="2021-05-30">
+<meta name="date" content="2021-12-17" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
 
-<link rel="next" href="preface.html">
-<script src="libs/header-attrs-2.8/header-attrs.js"></script>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link rel="next" href="preface.html"/>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
 
 
 
@@ -47,10 +49,14 @@
 
 
 
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 <link href="libs/bsTable-3.3.7/bootstrapTable.min.css" rel="stylesheet" />
 <script src="libs/bsTable-3.3.7/bootstrapTable.js"></script>
+
 
 
 
@@ -86,15 +92,16 @@
 <li class="chapter" data-level="1.2.5" data-path="QualityIndicatorsFramework.html"><a href="QualityIndicatorsFramework.html#fertilizers-by-nutrient"><i class="fa fa-check"></i><b>1.2.5</b> <strong>Fertilizers by Nutrient</strong></a></li>
 <li class="chapter" data-level="1.2.6" data-path="QualityIndicatorsFramework.html"><a href="QualityIndicatorsFramework.html#fertilizers-by-product"><i class="fa fa-check"></i><b>1.2.6</b> <strong>Fertilizers by Product</strong></a></li>
 <li class="chapter" data-level="1.2.7" data-path="QualityIndicatorsFramework.html"><a href="QualityIndicatorsFramework.html#forestry-production-and-trade"><i class="fa fa-check"></i><b>1.2.7</b> <strong>Forestry Production and Trade</strong></a></li>
-<li class="chapter" data-level="1.2.8" data-path="QualityIndicatorsFramework.html"><a href="QualityIndicatorsFramework.html#fisheries-and-aquaculture"><i class="fa fa-check"></i><b>1.2.8</b> <strong>Fisheries and Aquaculture</strong></a></li>
-<li class="chapter" data-level="1.2.9" data-path="QualityIndicatorsFramework.html"><a href="QualityIndicatorsFramework.html#producer-prices"><i class="fa fa-check"></i><b>1.2.9</b> <strong>Producer Prices</strong></a></li>
-<li class="chapter" data-level="1.2.10" data-path="QualityIndicatorsFramework.html"><a href="QualityIndicatorsFramework.html#pesticides-use"><i class="fa fa-check"></i><b>1.2.10</b> <strong>Pesticides Use</strong></a></li>
-<li class="chapter" data-level="1.2.11" data-path="QualityIndicatorsFramework.html"><a href="QualityIndicatorsFramework.html#pesticides-trade"><i class="fa fa-check"></i><b>1.2.11</b> <strong>Pesticides Trade</strong></a></li>
-<li class="chapter" data-level="1.2.12" data-path="QualityIndicatorsFramework.html"><a href="QualityIndicatorsFramework.html#land-use"><i class="fa fa-check"></i><b>1.2.12</b> <strong>Land Use</strong></a></li>
+<li class="chapter" data-level="1.2.8" data-path="QualityIndicatorsFramework.html"><a href="QualityIndicatorsFramework.html#aquaculture-production"><i class="fa fa-check"></i><b>1.2.8</b> <strong>Aquaculture Production</strong></a></li>
+<li class="chapter" data-level="1.2.9" data-path="QualityIndicatorsFramework.html"><a href="QualityIndicatorsFramework.html#capture-production"><i class="fa fa-check"></i><b>1.2.9</b> <strong>Capture Production</strong></a></li>
+<li class="chapter" data-level="1.2.10" data-path="QualityIndicatorsFramework.html"><a href="QualityIndicatorsFramework.html#producer-prices"><i class="fa fa-check"></i><b>1.2.10</b> <strong>Producer Prices</strong></a></li>
+<li class="chapter" data-level="1.2.11" data-path="QualityIndicatorsFramework.html"><a href="QualityIndicatorsFramework.html#pesticides-use"><i class="fa fa-check"></i><b>1.2.11</b> <strong>Pesticides Use</strong></a></li>
+<li class="chapter" data-level="1.2.12" data-path="QualityIndicatorsFramework.html"><a href="QualityIndicatorsFramework.html#pesticides-trade"><i class="fa fa-check"></i><b>1.2.12</b> <strong>Pesticides Trade</strong></a></li>
+<li class="chapter" data-level="1.2.13" data-path="QualityIndicatorsFramework.html"><a href="QualityIndicatorsFramework.html#land-use"><i class="fa fa-check"></i><b>1.2.13</b> <strong>Land Use</strong></a></li>
 </ul></li>
 <li class="chapter" data-level="1.3" data-path="QualityIndicatorsFramework.html"><a href="QualityIndicatorsFramework.html#create-and-transfer-tags"><i class="fa fa-check"></i><b>1.3</b> <strong>Create and Transfer tags</strong></a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="qualityIndicators.html"><a href="qualityIndicators.html"><i class="fa fa-check"></i><b>2</b> <strong>Quality Indicators</strong></a>
+<li class="chapter" data-level="2" data-path="qualityIndicators.html"><a href="qualityIndicators.html"><i class="fa fa-check"></i><b>2</b> <strong>The Quality Indicators</strong></a>
 <ul>
 <li class="chapter" data-level="2.1" data-path="qualityIndicators.html"><a href="qualityIndicators.html#accuracy"><i class="fa fa-check"></i><b>2.1</b> Accuracy</a>
 <ul>
@@ -115,15 +122,15 @@
 <li class="chapter" data-level="2.2.3" data-path="qualityIndicators.html"><a href="qualityIndicators.html#relative-mean-absolute-revision"><i class="fa fa-check"></i><b>2.2.3</b> Relative Mean Absolute Revision</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="faoswsQualityIndicators.html"><a href="faoswsQualityIndicators.html"><i class="fa fa-check"></i><b>3</b> <strong>faoswsQualityIndicators</strong></a>
+<li class="chapter" data-level="3" data-path="plugins.html"><a href="plugins.html"><i class="fa fa-check"></i><b>3</b> <strong>The plugins</strong></a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="faoswsQualityIndicators.html"><a href="faoswsQualityIndicators.html#quality-indicators---r-functions"><i class="fa fa-check"></i><b>3.1</b> <strong>Quality Indicators - R functions</strong></a>
+<li class="chapter" data-level="3.1" data-path="plugins.html"><a href="plugins.html#faoswsqualityindicators"><i class="fa fa-check"></i><b>3.1</b> <strong>faoswsQualityIndicators</strong></a>
 <ul>
-<li class="chapter" data-level="3.1.1" data-path="faoswsQualityIndicators.html"><a href="faoswsQualityIndicators.html#getaccuracy"><i class="fa fa-check"></i><b>3.1.1</b> <strong>getAccuracy</strong></a></li>
-<li class="chapter" data-level="3.1.2" data-path="faoswsQualityIndicators.html"><a href="faoswsQualityIndicators.html#getreliability"><i class="fa fa-check"></i><b>3.1.2</b> <strong>getReliability</strong></a></li>
+<li class="chapter" data-level="3.1.1" data-path="plugins.html"><a href="plugins.html#quality-indicators---r-functions"><i class="fa fa-check"></i><b>3.1.1</b> <strong>Quality Indicators - R functions</strong></a></li>
+<li class="chapter" data-level="3.1.2" data-path="plugins.html"><a href="plugins.html#aggregates"><i class="fa fa-check"></i><b>3.1.2</b> <strong>Aggregates</strong></a></li>
+<li class="chapter" data-level="3.1.3" data-path="plugins.html"><a href="plugins.html#running-the-module"><i class="fa fa-check"></i><b>3.1.3</b> <strong>Running the module</strong></a></li>
 </ul></li>
-<li class="chapter" data-level="3.2" data-path="faoswsQualityIndicators.html"><a href="faoswsQualityIndicators.html#aggregates"><i class="fa fa-check"></i><b>3.2</b> <strong>Aggregates</strong></a></li>
-<li class="chapter" data-level="3.3" data-path="faoswsQualityIndicators.html"><a href="faoswsQualityIndicators.html#running-the-module"><i class="fa fa-check"></i><b>3.3</b> <strong>Running the module</strong></a></li>
+<li class="chapter" data-level="3.2" data-path="plugins.html"><a href="plugins.html#faoswsqitailored"><i class="fa fa-check"></i><b>3.2</b> <strong>faoswsQITailored</strong></a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="qualityIndicatorsApp.html"><a href="qualityIndicatorsApp.html"><i class="fa fa-check"></i><b>4</b> <strong>Shiny App</strong></a></li>
 <li class="chapter" data-level="" data-path="appendix.html"><a href="appendix.html"><i class="fa fa-check"></i>Appendix</a></li>
@@ -166,14 +173,14 @@
             <section class="normal" id="section-">
 <div id="header">
 <h1 class="title">Quality Indicators in the SWS</h1>
-<h4 class="author"><em>Bruno Caetano Vidigal
+<p class="author"><em>Bruno Caetano Vidigal
 <address class="author_afil">
 Statistician - ESS - Methodological Innovation Team
-</address></em></h4>
-<h4 class="date"><em>2021-05-30</em></h4>
+</address></em></p>
+<p class="date"><em>2021-12-17</em></p>
 </div>
 <div id="welcome" class="section level1 unnumbered">
-<h1 class="unnumbered"><strong>Welcome</strong></h1>
+<h1><strong>Welcome</strong></h1>
 <p>Producing and disseminating high quality statistics are paramount for delving deeper into agriculture and food issues and FAO has proposed a set of indicators to measure quality in different types of dimensions: relevance, accuracy and reliability, timeliness and punctuality, coherence and comparability, accessibility and clarity. This book describes the entire implementation of the Quality Indicators in the Statistical Working System (SWS) applied to the several statistical processes - Agriculture Production and Trade, Fertilizers, Pesticides, Land Use, Forestry Production and Trade, Producer Prices and Fisheries.</p>
 <div class="rmdnote">
 <p>
@@ -202,12 +209,13 @@ Statistician - ESS - Methodological Innovation Team
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -215,12 +223,12 @@ gitbook.start({
 "github": false,
 "facebook": true,
 "twitter": true,
-"google": false,
 "linkedin": false,
 "weibo": false,
-"instapper": false,
+"instapaper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -231,7 +239,19 @@ gitbook.start({
 "link": null,
 "text": null
 },
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
 "download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }
@@ -245,9 +265,10 @@ gitbook.start({
     var script = document.createElement("script");
     script.type = "text/javascript";
     var src = "true";
-    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:" && /^https?:/.test(src))
-      src = src.replace(/^https?:/, '');
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
     script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();

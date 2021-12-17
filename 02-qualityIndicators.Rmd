@@ -1,11 +1,10 @@
-# **Quality Indicators** {#qualityIndicators}
+# **The Quality Indicators** {#qualityIndicators}
 
-This chapter describes the QI to be calculated in the SWS. These indicators have been proposed by OCS and endorsed by the IDWG. Nevertheless, for a better description and information regarding the indicators below, please read the following documents.
+This chapter describes the QI to be calculated in the SWS. These indicators have been proposed by OCS and endorsed by the IDWG. Nevertheless, for a better description and information regarding the indicators below, please read the following document.
 
 - the [Statistical Standard Series - Quality Indicators for External Users](http://intranet.fao.org/fileadmin/user_upload/scp/SSS_Quality_Indicators__rev20201201_.pdf) 
-- the [Quality Indicators - FAO ESS review for questionnaire-based FAOSTAT domains](documentation/Quality_indicators_DRAFT_v20190628 (003).docx), which contains the ready-to-use quality indicators, based on the first document.
 
-The indicators can be split in the following dimensions:
+The indicators can be split into eight dimensions:
 
 - Relevance
 - Accuracy
@@ -16,7 +15,7 @@ The indicators can be split in the following dimensions:
 - Comparability
 - Accessibility
 
-We will focus on the description and implementation of two dimensions: **Accuracy** and **Reliability**. Although all quality dimensions are very important and should be taken into account in order to measure the quality of a statistical output, accuracy and reliability are the only ones that can be measured with the disseminated data. The remain ones are feasible to measure once the technical units provide us with information regarding their calendars/deadlines.
+We will focus on the description and implementation of two dimensions: **Accuracy** and **Reliability**. Although all quality dimensions are very important and should be taken into account in order to measure the quality of a statistical output, accuracy and reliability are the only ones that can be measured using the disseminated data. The remain ones are feasible to measure once the technical units provide us with information regarding their calendars/deadlines.
 
 ## Accuracy
 
